@@ -1,0 +1,284 @@
+    .espace-client .container {
+        margin-left: 0;
+    }
+    
+    .background-gris {
+        background: #F6F6F6;
+    }
+    
+    .espace-client .inscription {
+        text-align: center;
+        padding: 60px 0 0
+    }
+    
+    .espace-client .inscription h2 {
+        color: #747F92;
+        font-weight: 600;
+        font-size: 35px;
+    }
+    
+    .espace-client .inscription .p-span span {
+        font-size: 17px;
+        color: #747F92;
+    }
+    
+    .espace-client .inscription .p-span {
+        margin: 20px 0
+    }
+    
+    .espace-client .Particulier0 p {
+        text-align: left
+    }
+    
+    .espace-client .Particulier1 p {
+        color: #CECFD1;
+        font-weight: 400;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: montserrat-light;
+        font-size: 22px
+    }
+    
+    .border-jaune {
+        border-bottom: 2px solid #EEC400;
+        padding-bottom: 13px;
+        font-weight: 600 !important;
+        color: #747F92 !important;
+        font-family: montserrat-Medium !important;
+        text-align: end !important;
+    }
+    
+    .espace-client .text-left a {
+        text-align: end;
+        color: #CECFD1;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: montserrat-Medium;
+    }
+    
+    hr {
+        width: 95%;
+        border-top: 3px solid rgba(0, 0, 0, .1);
+        margin-top: -17px;
+    }
+    
+    .espace-client label {
+        max-width: 100%
+    }
+    
+    .accepte {
+        margin-left: 15px;
+        text-align: left !important
+    }
+    
+    hr {
+        width: 95%;
+        border-top: 3px solid rgba(0, 0, 0, .1);
+        margin-top: -17px;
+    }
+    
+    .espace-client .inscription .p-span span {
+        font-size: 17px;
+        color: #747F92;
+    }
+    
+    .espace-client .inscription .p-span {
+        margin: 20px 0
+    }
+    
+    .espace-client .Particulier1 p {
+        font-weight: 600;
+        font-size: 22px
+    }
+    
+    .espace-client .Particulier1 p {
+        color: #CECFD1;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .espace-client .Professionnel a {
+        text-align: end;
+        color: #CECFD1;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: montserrat-Medium
+    }
+    
+    .espace-client .form-control {
+        padding: 27px 10px
+    }
+    
+    .espace-client .form-control:focus {
+        border: 1px solid #FEDC08;
+        box-shadow: 1px 1px 5px -1px #FEDC08;
+    }
+    
+    .d-flex input {
+        opacity: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .espace-client .container {
+        margin-left: 0
+    }
+    
+    .checkmark {
+        position: absolute;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+        margin-top: 4px;
+    }
+    
+    form .d-flex input:checked~.checkmark {
+        background-color: #EEC400;
+    }
+    
+    .checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+        display: block;
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    select {
+        -webkit-appearance: none;
+        -o-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 55px !important;
+        padding: 0px 20px !important
+    }
+    
+    .espace-client .Particulier0 p {
+        text-align: left
+    }
+    
+    .select-fonction::after {
+        content: '\25BC';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 17px 21px;
+        background: #34495e;
+        cursor: pointer;
+        pointer-events: none;
+        margin-right: 1rem!important;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+        background: transparent;
+        color: #747F92;
+    }
+    
+    .espace-client .rester p {
+        text-align: left;
+    }
+    
+    .background-gris {
+        background: #F6F6F6
+    }
+    
+    .condition {
+        color: #FF5B5B
+    }
+    
+    .espace-client label {
+        padding: 0
+    }
+    
+    .connecter a {
+        background: #EEC400;
+        border: none;
+        outline: none;
+        padding: 10px 91px;
+        color: #fff;
+        font-size: 25px;
+        border-radius: 5px;
+        margin: 20px 0;
+        width: 100%;
+        text-decoration: none;
+        color: #fff !important;
+    }
+    
+    .espace-client p {
+        color: #747F92;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .espace-client a {
+        font-weight: 600;
+        color: #EEC400;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .espace-client .mt-3 a {
+        font-weight: 600;
+        color: #EEC400;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: montserrat-Medium
+    }
+    
+    .rester {
+        justify-content: space-between !important;
+        margin: 10px 0 0;
+    }
+    
+    .espace-client .rester p {
+        text-align: left;
+        margin-left: 14px;
+    }
+    
+    .connecter button {
+        background: #EEC400;
+        border: none;
+        outline: none;
+        padding: 10px 91px;
+        color: #fff;
+        font-size: 25px;
+        border-radius: 5px;
+        margin: 20px 0;
+        width: 100%;
+        text-decoration: none;
+        color: #fff !important;
+    }
+    
+    @media screen and (max-width:991px) {
+        .espace-client .container {
+            max-width: 100%
+        }
+        .espace-client .inscription {
+            padding: 22px 0 0;
+        }
+        .espace-client .Particulier1 p {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .espace-client a {
+            font-size: 17px;
+        }
+        hr {
+            width: 92%;
+        }
+        .connecter button {
+            width: 75%;
+        }
+    }

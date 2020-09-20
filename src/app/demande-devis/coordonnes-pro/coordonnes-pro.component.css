@@ -1,0 +1,160 @@
+.demande-devis {
+    background-image: linear-gradient(to top, #F8F8F8 0%, #F8F8F8 100%);
+    padding: 35px 0px;
+}
+
+.demande-devis h2 {
+    color: #232323;
+    font-weight: 600
+}
+
+.demande-devis p {
+    color: #747F92;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.demande-devis label,
+.demande-devis input,
+.demande-devis select {
+    color: #B7B7B7;
+    font-size: 17px;
+}
+
+.demande-devis input:focus,
+.demande-devis select:focus,
+.demande-devis textarea:focus {
+    border: 1px solid #FEDC08;
+    box-shadow: 1px 1px 5px -1px #FEDC08;
+}
+
+.demande-devis .Submit,
+.demande-devis .annuler {
+    background-image: linear-gradient(120deg, #B7B7B7 0%, #B7B7B7 100%);
+    box-shadow: 0px 0px 4px 0px #878787;
+    border: none;
+    padding: 6px 20px;
+    color: #404040;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.3s all;
+}
+
+.demande-devis .Submit:hover,
+.demande-devis .annuler:hover,
+.demande-devis .Submit:active,
+.demande-devis .annuler:active {
+    background-image: linear-gradient(120deg, #c9aa18 0%, #EEC400 100%);
+    box-shadow: 1px 2px 11px -1px #EEC400;
+    color: #fff;
+}
+
+.demande-devis .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.demande-devis .padding-picture {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.demande-devis .border-picure {
+    border: 3px dashed #C2CDDA;
+    border-radius: 9px;
+    padding: 17px 10px;
+}
+
+.demande-devis .drag {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555A6B;
+}
+
+.demande-devis .browse-file a {
+    padding: 10px 30px;
+    background: #EEC400;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.demande-devis .type-user select::-ms-expand,
+.demande-devis .code-postal select::-ms-expand {
+    display: none;
+}
+
+.demande-devis .type-user::after {
+    content: '\25BC';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 17px 21px;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    margin-right: 3rem!important;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    background: transparent;
+    color: #747F92;
+}
+
+.demande-devis .type-user select,
+.demande-devis .code-postal select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+.demande-devis .Submit,
+.demande-devis .annuler {
+    padding: 12px 32px;
+    color: #fff;
+    transition: 0.5s all
+}
+
+.demande-devis .annuler {
+    padding: 12px 41px
+}
+
+.demande-devis select {
+    height: 55px !important;
+    padding: 0px 12px !important
+}
+
+.demande-devis input::placeholder {
+    color: #B7B7B7;
+}
+
+.caption-text .carousel-caption .demande-devis {
+    margin-top: 10px;
+    border-left: 1px solid;
+    padding-left: 20px
+}
+
+.caption-text .carousel-caption .demande-devis a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.demande-devis .Submit {
+    background: #EEC400
+}
+
+.demande-devis .or {
+    margin-top: -10px
+}

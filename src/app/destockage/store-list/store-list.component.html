@@ -1,0 +1,22 @@
+<div class="bg-gris">
+    <section class="boutique boutique-jaune ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <app-partenaire-destockage>
+                    </app-partenaire-destockage>
+                </div>
+                <div class="col-lg-6">
+                    <app-carousel-destockage></app-carousel-destockage>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <ng-container  *ngIf="brands$ | async as brands" >
+          <div class="row" *ngFor="let brand of brands?.paginatedList">
+            <app-brand-card [brand]="brand"></app-brand-card>
+          </div>
+        </ng-container>
+      </div>

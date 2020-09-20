@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    .container .call .investment span {
+        display: none;
+    }
+    .container .call {
+        padding: 0px
+    }
+    .container .call .d-flex {
+        padding-right: 0
+    }
+    .container .call a {
+        display: FLEX;
+    }
+    .container .call .investment .conver {
+        padding: 4px 0px 4px 3px;
+        border-radius: 50%;
+    }
+    .container .call .investment img {
+        max-width: 25px
+    }
+    .container .langue {
+        margin-top: 7px;
+    }
+}

@@ -1,0 +1,38 @@
+<section class="equipe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft  protection">
+                <span class="PROTECT">PROTECTION</span>
+                <div class="meilleur-equipe">
+                    <p class="">LE MEILLEUR DES EQUIEPEMENTS DE <span>PROTECTION INDVIDUELLE</span> AU MEILLEUR PRIX.</p>
+                </div>
+                <div class="demandez">
+                    <a href="#">DEMANDEZ UN DEVIS</a>
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 wow fadeInRight">
+                <div class="bd-example">
+                    <ngb-carousel #carousel interval="10000000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                        <ng-template ngbSlide *ngFor="let img of images; index as i">
+
+                            <div class="index-img">
+                                <h3>{{i + 1}} / {{images.length}}</h3>
+                            </div>
+
+
+                            <a href="" target="_blank" rel="nofollow noopener noreferrer">
+                                <div class="picsum-img-wrapper">
+                                    <img [src]="img" alt="My image {{i + 1}} description">
+                                </div>
+                            </a>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

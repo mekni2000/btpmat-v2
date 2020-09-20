@@ -1,0 +1,48 @@
+<section class="nos-acualite">
+    <div class="container ">
+        <div class="SKILLED position-relative">
+
+
+
+            <h4>WE ARE SKILLED FOR</h4>
+            <h3 class="wow flash" data-delay="1s" data-duration="1s">NOS <span>ACTUALITES</span></h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+
+        </div>
+
+    </div>
+</section>
+<section class="summer">
+    <div class="container">
+        <div class="row" *ngIf="articles$ | async as articles">
+            <div class="col-lg-5" *ngFor="let article of articles?.paginatedList">
+                <div class="row skip hills wow fadeInLeft" data-duration="1s" data-delay="1s">
+                    <div class="col-lg-4 col-12 col-sm-4 col-xl-3 col-md-3 pl-0">
+                        <img [src]="article.photoURL">
+                    </div>
+                    <div class="col-lg-8 col-12 col-sm-8 col-xl-9 col-md-9">
+                        <h5>{{article.title}}</h5>
+                        <p>Sed ut perspiciatis unde mniste natus error sit voluptatem...</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-6 col-md-6">
+                                <span>{{article.createdAt | date}}</span>
+                            </div>
+                            <div class="col-lg-6 col-6  col-md-6 text-right pr-4">
+                                <a routerLink="/actualite/{{article.id}}">voir plus ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+
+
+            </div>
+       
+        </div>
+
+    </div>
+    <div class="voir-plus text-center">
+        <a >voir plus</a>
+    </div>
+</section>

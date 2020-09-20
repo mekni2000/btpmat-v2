@@ -1,0 +1,116 @@
+<span (click)="open(content, product)" value="product"> {{product.name}}</span>
+<ng-template #content let-modal class="gallery-product">
+    <div class="modal-header">
+
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 modal-25">
+                <ngb-carousel #ngcarousel>
+                    <ng-template ngbSlide id="one">
+                        <div class="picsum-img-wrapper">
+                            <img src="{{product.productThumbnailPhotoURL}}" alt="ingco">
+                        </div>
+                    </ng-template>
+
+                    <ng-template ngbSlide id="two">
+                        <div class="picsum-img-wrapper">
+                            <img src="../../../assets/img/ingco7.png" alt="ingco">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide id="three">
+                        <div class="picsum-img-wrapper">
+                            <img src="../../../assets/img/ingco6.png" alt="ingco">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide id="four">
+                        <div class="picsum-img-wrapper">
+                            <img src="../../../assets/img/ingco6.png" alt="ingco">
+                        </div>
+                    </ng-template>
+
+
+                </ngb-carousel>
+
+                <div class="text-center d-flex img-slide">
+
+                    <div class="picsum-img-wrapper" (click)="navigateToSlide(one)">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                    </div>
+
+                    <div class="picsum-img-wrapper" (click)="navigateToSlide('two')">
+                        <img src="../../../assets/img/ingco7.png" alt="ingco">
+
+
+
+                    </div>
+                    <div class="picsum-img-wrapper" (click)="navigateToSlide('three')">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                    </div>
+                    <div class="picsum-img-wrapper" (click)="navigateToSlide('four')">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                    </div>
+
+                    <button (click)="getToPrev()" class="prev">
+                        <img src="../../../assets/img/arrow-left2.svg" alt="">
+                    </button>
+                    <button (click)="goToNext()" class="next">
+                        <img src="../../../assets/img/arrow-gris-right.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 modal1  modal-25">
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>{{product.name}} <span> REFERENCE: {{product.reference}}</span></h2>
+                        <p>Product Details</p>
+                        <ul>
+                            <li>Tension: 220-240 V ~ 60Hz</li>
+                            <li>Puissance: 100 W</li>
+                            <li>Capacité collé: 13-18g / min</li>
+                            <li>Diamètre du barreau: 11.2mm</li>
+                            <li>Compris : 2 barreaux de silicone inclus 11.2mm en blister</li>
+                            <li>Warranty provided by Brand Owner / Manufacturer</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <h5>Price</h5>
+                        <h4>{{product.price | currency : 'EUR'}}</h4>
+                        <h6>{{product.discount | currency : 'EUR'}}</h6>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row border-gris">
+                    <div class="col-lg-6 col-6 col-sm-6 col-md-6 pl-0">
+                        <p class="marque">MARQUE</p>
+                        <div class="">
+                            <img src="{{product.brandLogoURL}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 d-none d-md-block"></div>
+                    <div class="col-lg-3  col-6 col-sm-6  col-md-3 pr-0">
+                        <p class="marque">Quantity</p>
+                        <input type="number" [(ngModel)]="quantity" name="quantity">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-right mb-3">
+            <button class='btn btn-primary mr-auto ajout-btn' (click)="onSubmit()">    
+                <img src="../../../assets/img/panier-logo.png" alt="">
+                Ajouter au panier</button>
+        </div>
+
+    </div>
+</ng-template>

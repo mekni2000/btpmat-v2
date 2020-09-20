@@ -1,0 +1,127 @@
+.fenetre .carousel-control-prev {
+  top: 58%;
+  left: 33%;
+}
+
+.fenetre .carousel-control-next {
+  right: 33%;
+  top: 59%;
+}
+
+.fenetre .carousel-item {
+  height: 570px;
+}
+
+.ELECTRICITY .marque .PROTECT,
+.fenetre .PROTECT {
+  color: #404040;
+  font-size: 17px;
+}
+
+.ELECTRICITY .meilleur-equipe p,
+.fenetre .meilleur-equipe p {
+  color: #404040;
+  font-size: 25px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-top: -4px;
+}
+
+.fenetre {
+  margin-top: 60px;
+}
+
+.fenetre .ELECTRIQUES {
+  color: #eec400;
+}
+
+.fenetre .CHANTIER {
+  color: #ff5b5b;
+}
+
+.fenetre .demandez {
+  margin-top: 50px;
+  text-align: right;
+  transition: 0.2s ease-in-out;
+}
+
+.fenetre .demandez:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+}
+
+.fenetre .demandez a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  background-image: linear-gradient(120deg, #ddbc20 0%, #eec400 100%);
+  padding: 13px 31px;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 1px 2px 11px -1px #e8c004;
+}
+
+.fenetre .increment {
+  margin: 52px 58px;
+  text-align: center !important;
+}
+
+.fenetre .increment p {
+  color: #303030;
+  font-size: 28px;
+  font-weight: 550;
+}
+
+.fenetre .increment .increment-3 {
+  color: #3030309e;
+  font-size: 20px;
+}
+
+.fenetre .carousel-caption {
+  color: #000;
+}
+
+.fenetre .carousel-caption h5 {
+  color: #303030;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+.equipe .carousel-caption h5 {
+  color: #303030;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.fenetre .carousel-caption p {
+  font-weight: 550;
+  font-size: 17px;
+  color: #303030;
+}
+
+.fenetre .row {
+  align-items: center;
+}
+
+.fenetre .carousel-caption {
+  left: 3%;
+}
+
+.fenetre .background-fenetre {
+  background-image: url("../../../assets/img/background-fenetre.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 80px 0;
+}
+
+.fenetre .index-img {
+  position: absolute;
+  right: -105%;
+  bottom: 11%;
+}
+
+.fenetre .picsum-img-wrapper {
+  height: 58vh;
+}

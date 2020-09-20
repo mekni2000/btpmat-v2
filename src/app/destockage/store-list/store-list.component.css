@@ -1,0 +1,21 @@
+.boutique {
+    background: #FF5B5B;
+    padding: 55px 0px 50px;
+    margin: 60px 81px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px 2px #aea34d;
+}
+
+.bg-gris {
+    background: #F8F8F8;
+}
+
+@media screen and (max-width:991px) {
+    .boutique {
+        margin: 20px 16px;
+        padding-bottom: 0;
+    }
+    .boutique {
+        padding: 0px 0px 50px;
+    }
+}

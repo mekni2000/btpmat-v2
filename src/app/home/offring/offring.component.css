@@ -1,0 +1,106 @@
+.skilled {
+    margin-top: 50px;
+    background-image: linear-gradient(120deg, #cfcece6b 0%, #e4e4e1bf 100%);
+    padding: 40px 0px
+}
+
+.skilled .text-center {
+    cursor: pointer;
+}
+
+.skilled .OFFERING span {
+    color: #404040;
+    font-size: 20px;
+    position: relative;
+}
+
+.skilled .OFFERING .line-skilled::before {
+    content: url(../../../assets/img/skilled-line.png);
+    position: absolute;
+    bottom: 13px;
+    left: -34%;
+    margin-left: -5px
+}
+
+.skilled .OFFERING .line-skilled::after {
+    content: url(../../../assets/img/skilled-line.png);
+    position: absolute;
+    bottom: 13px;
+    right: -33%;
+    margin-right: -5px
+}
+
+.skilled .OFFERING p {
+    color: #EEC400;
+    font-weight: 600;
+    font-size: 30px
+}
+
+.skilled .OFFERING .what {
+    color: #404040;
+    font-weight: 600;
+    font-size: 30px
+}
+
+.skilled .row {
+    color: #747F92
+}
+
+.skilled .row p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #747F92
+}
+
+.SKILLED .consetetur {
+    width: 70%;
+    margin: auto;
+}
+
+.skilled .consetetur p {
+    color: #AEAEAE;
+    font-size: 17px;
+    font-weight: 550
+}
+
+.skilled .logistique-qualite {
+    margin-left: 100px;
+}
+
+.skilled .bg-jaune {
+    background-image: url('../../../assets/img/bg-artisants.png');
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.skilled .logistique-qualite .logistique-bg {
+    background-image: linear-gradient(to top, #fff5f5 0%, #fff 100%);
+    box-shadow: 1px 1px 13px -4px #818858;
+    padding: 80px 31px;
+    border-radius: 15px;
+    height: 330px;
+}
+
+.skilled .qualite {
+    margin-top: 55px
+}
+
+.skilled .pointe {
+    margin-top: 120px
+}
+
+.skilled .row span {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    cursor: pointer;
+    text-align: initial
+}
+
+.skilled .consetetur {
+    width: 70%;
+    margin: auto;
+}

@@ -1,0 +1,56 @@
+.FOURNITURE {
+  background-image: url("../../../assets/img/bg-pavés.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 85px 31px;
+}
+
+.FOURNITURE .row {
+  align-items: center;
+}
+
+.FOURNITURE .FOURNITURE-pose span {
+  color: #404040;
+  font-size: 20px;
+}
+
+.FOURNITURE .FOURNITURE-pose p {
+  font-size: 35px;
+  font-weight: bold;
+  color: #404040;
+  margin-top: -9px;
+}
+
+.FOURNITURE a {
+  color: #404040;
+  font-size: 14px;
+  font-weight: bold;
+  background: #e8c004;
+  padding: 13px 47px;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 1px 0px 19px -15px #443f3f;
+}
+
+.FOURNITURE .FOURNITURE-pose .GARANTIE {
+  color: #747f92;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.FOURNITURE a {
+  padding: 13px 23px;
+  color: white;
+  font-weight: 500;
+}
+
+.FOURNITURE .btn-devis {
+  margin-top: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-devis:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+}

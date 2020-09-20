@@ -1,0 +1,142 @@
+@media screen and (max-width:767px) {
+    .btpmat .container .menu .search .form-inline input {
+        margin-left: 5px;
+        width: 100%;
+    }
+    .logo-popup {
+        margin-left: 10px
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        margin: 14px 0px
+    }
+    .btpmat .container .nav {
+        justify-content: center;
+    }
+    .client-modal .connexion label {
+        font-size: 15px
+    }
+    .client-modal .connecter {
+        margin: 17px 0;
+    }
+    .client-modal button {
+        padding: 5px 54px
+    }
+    .btpmat .container .nav .nav-link {
+        font-size: 13px
+    }
+    .connexion {
+        margin-top: 9px
+    }
+    .btpmat .container .menu .search .form-inline button {
+        height: 35px;
+        top: 7px;
+        right: 15px;
+        padding: 6px;
+    }
+    .lien-logo-accueil {
+        display: none;
+    }
+}
+
+@media (min-width: 518px) and (max-width: 768px) {
+    .btpmat .container .menu .search .form-inline button {
+        top: 8px;
+        right: 15px;
+        padding: 6px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .btpmat .container .menu .search .form-inline button {
+        top: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btpmat .container .menu .search .form-inline input {
+        margin-left: 10px
+    }
+    .btpmat .container .menu .search .form-inline input {
+        margin-left: 10px
+    }
+    .btpmat .container .menu .search .form-inline button {
+        top: -5px;
+        right: 8px;
+        padding: 6px;
+        height: 35px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .btpmat .container .nav .nav-link {
+        padding: 4px 3px 4px 2px;
+        font-size: 14px
+    }
+    .search .form-inline {
+        margin-top: -5px
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .btpmat .container .menu .search .form-inline input {
+        margin-left: 20px;
+    }
+    .btpmat .container .nav .nav-link {
+        font-size: 13px
+    }
+}
+
+@media (min-width: 2000px) {
+    .btpmat .container .menu .search .form-inline input {
+        font-size: 23px;
+        height: 50px;
+        margin-left: 83px
+    }
+    .btpmat .container .menu .search .form-inline button {
+        right: 0;
+        height: 50px;
+        width: 7%
+    }
+    .btpmat {
+        padding: 30px 0px 16px 0px
+    }
+    .btpmat .container .nav .nav-link {
+        font-size: 22px
+    }
+    .btpmat .container .nav .number {
+        height: 25px;
+        width: 25px;
+        padding: 3px 9px;
+        font-size: 14px;
+        top: -12PX;
+        RIGHT: 2%;
+    }
+    .btpmat .container .nav img {
+        width: 35px;
+        margin-right: 10;
+    }
+}
+
+@media (min-width:1600px) {
+    .btpmat .container .nav .nav-link {
+        font-size: 22px;
+    }
+    .btpmat {
+        padding: 25px 0
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .btpmat .container .menu .search .form-inline input {
+        padding: 23px 20px;
+        margin-left: 88px;
+    }
+    .btpmat .container .menu .search .form-inline button {
+        width: 7%;
+        RIGHT: 0.75%;
+        padding: 11px;
+    }
+}

@@ -1,0 +1,95 @@
+<div class="bg-gris" *ngIf="brands$ | async as brands; else loading">
+    <section class="boutique boutique-jaune ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <app-partenaire>
+                    </app-partenaire>
+                </div>
+                <div class="col-lg-6" *ngIf="promotedProduct$ | async as products; else loading">
+                    <ng-container>
+                        <!--  <app-carousel-partenaire [product]="product"></app-carousel-partenaire>-->
+                        <div class="shadow-3d ">
+
+
+                            <owl-carousel-o [options]="customOptions">
+                                <ng-template carouselSlide *ngFor="let product of products?.paginatedList">
+                                    <div class="item shadow-item">
+                                        <div class="row ">
+                                            <div class="col-lg-6 col-6 col-sm-6 col-md-6 brand-url">
+                                                <img src="{{product.brandLogoURL}} ">
+                                            </div>
+                                            <div class="col-lg-6 col-6 col-sm-6 col-md-6 text-right ">
+                                                <div class="font-heart">
+                                                    <fa name="heart"></fa>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="text-center product-url">
+                                            <img src="{{product.productThumbnailPhotoURL}}">
+                                        </div>
+                                        <div class="text-center MECANIQUE ">
+                                            <p>{{product.name | uppercase}}</p>
+                                            <span>Réf : {{product.reference}}</span>
+
+                                        </div>
+                                        <hr>
+                                        <div class="prix ">
+                                            <div class="row ">
+
+                                                <div class="col-lg-4 col-6 col-sm-6 col-md-6 remise ">
+                                                    <p>{{product.discount}}%</p>
+                                                </div>
+                                                <div class="col-lg-8 col-6 col-sm-6 col-md-6 panier d-flex ">
+                                                    <div class="mt-1 ">
+                                                        <span> {{product.discountedPrice | currency:'EUR'}}</span>
+
+                                                    </div>
+                                                    <div class="panier-img ">
+                                                        <img src="../../../assets/img/panier.svg ">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </ng-template>
+
+                            </owl-carousel-o>
+
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container">
+        <ng-container *ngIf="brands$ | async as brands">
+            <div class="row " *ngFor="let brand of brands?.paginatedList">
+                <brand-card [brand]="brand"></brand-card>
+            </div>
+        </ng-container>
+    </div>
+
+
+
+
+
+    <app-industrie></app-industrie>
+
+
+</div>
+
+
+<ng-template #loading>
+    Loading...
+</ng-template>

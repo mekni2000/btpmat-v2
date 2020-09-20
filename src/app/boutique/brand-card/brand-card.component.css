@@ -1,0 +1,60 @@
+:host ::ng-deep .nav-tabs {
+    width: 88vw;
+    box-shadow: 0px 1px 17px 0px #d1d1d1;
+    border-radius: 6px;
+}
+
+:host ::ng-deep .nav-justified .nav-item {
+    font-family: 'montserrat-Medium';
+    font-size: 1.2em;
+}
+
+
+/* shimmer */
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -1000px 0
+    }
+    100% {
+        background-position: 1000px 0
+    }
+}
+
+.animated-background {
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, #fbfbfb 8%, #efefef 18%, #fbfbfb 33%);
+    background-size: 600px 122px;
+    height: 83px;
+    max-width: 600px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.w10 {
+    width: 100px;
+    height: 100px;
+}
+
+.separator-large {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+

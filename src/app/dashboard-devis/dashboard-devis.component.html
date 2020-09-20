@@ -1,0 +1,19 @@
+<section class="home-dashboard" *ngIf="user$ | async as user">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-2 col-sm-2 col-md-2 dashboard-bg pl-0">
+
+
+
+                <app-side-bar [user]="user"></app-side-bar>
+
+            </div>
+            <div class="col-lg-11  col-10 col-sm-10 col-md-10 dashbord-devis">
+
+                <router-outlet>
+
+
+                </router-outlet>
+
+
+            </div>

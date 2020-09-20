@@ -1,0 +1,105 @@
+.commande {
+  margin-top: 40px;
+  height: 680px;
+  background: url("../../../assets/img/bg-camion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.commande .opacity {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.4);
+  z-index: 0;
+}
+
+.commande .confiance p {
+  font-size: 22px;
+  font-weight: 550;
+  color: #fff;
+  position: relative;
+}
+
+.commande .confiance p::before {
+  content: url("../../../assets/img/line.png");
+  position: absolute;
+  bottom: 8px;
+  left: 29%;
+  margin-left: 6px;
+}
+
+.commande .confiance p::after {
+  content: url("../../../assets/img/line.png");
+  position: absolute;
+  bottom: 8px;
+  right: 29%;
+  margin-right: 6px;
+}
+
+.commande .confiance h4 {
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+}
+
+.commande .confiance h5 {
+  color: #fff;
+  font-size: 23px;
+  position: relative;
+  margin: 50px 0;
+}
+
+.commande .Commandez {
+  margin: 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.Commandez:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+}
+
+.commande .Commandez a {
+  background: #e8c004;
+  padding: 10px 25px;
+  border-radius: 7px;
+  color: #fff;
+  box-shadow: 1px 2px 11px -1px 000;
+  text-decoration: none;
+  position: relative;
+}
+
+.commande .container .row {
+  position: absolute;
+  bottom: 30px;
+  margin-right: 0;
+}
+
+.commande .container .row span {
+  font-weight: 550;
+  font-size: 17px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.commande .container .row p {
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 25px 0 25px;
+  color: #fff;
+}
+
+.commande .container .row .man-img img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 18px;
+}

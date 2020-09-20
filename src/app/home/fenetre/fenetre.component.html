@@ -1,0 +1,38 @@
+<section class="fenetre">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xl-5  col-12 col-md-6">
+                <ngb-carousel #carousel interval="10000000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let img of images; index as i">
+
+                        <div class="index-img">
+                            <h3>{{i + 1}} / {{images.length}}</h3>
+                        </div>
+
+
+                        <a href="" target="_blank" rel="nofollow noopener noreferrer">
+                            <div class="picsum-img-wrapper">
+                                <img [src]="img" alt="My image {{i + 1}} description">
+                            </div>
+                        </a>
+                    </ng-template>
+                </ngb-carousel>
+
+
+            </div>
+            <div class="d-none d-xl-block col-xl-2"></div>
+            <div class="col-lg-6 col-xl-5 col-12 col-md-6 text-right background-fenetre">
+                <span class="PROTECT text-right">L'ALIMINUM, LA VITROIRE, L'INOX</span>
+                <div class="meilleur-equipe">
+                    <p class="text-right">C'EST AUSSI NOTRE TRAVAIL NOTRE EQUIPE<span class="ELECTRIQUES"> D'EXPERT </span>vous<span class="CHANTIER"> AIDES </span>DANS VOTRE PROJET</p>
+                </div>
+                <div class="demandez">
+                    <a href="#">DEMANDEZ UN DEVIS</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>

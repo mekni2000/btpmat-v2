@@ -1,0 +1,372 @@
+.dashbord-devis p {
+    color: #AFAFAF;
+    font-size: 20px;
+}
+
+.dashbord-devis .devis-p {
+    color: #747F92;
+    font-weight: 600 !important;
+    letter-spacing: 1.1
+}
+
+.dashbord-devis p span {
+    color: #717171
+}
+
+.dashbord-devis .liste-devis ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0
+}
+
+.dashbord-devis .liste-devis ul li {
+    margin-right: 50px
+}
+
+.dashbord-devis .liste-devis ul li a {
+    color: #686868;
+    transition: 0.5s all;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.dashbord-devis .liste-devis ul li .active,
+.dashbord-devis .liste-devis ul li a:hover,
+.dashbord-devis .liste-devis ul li a:active {
+    color: #EEC400;
+    font-weight: bold;
+    border-bottom: 2px solid #EEC400;
+    padding-bottom: 7px;
+}
+
+.dashbord-devis .button-demande {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.dashbord-devis .button-demande a {
+    background: #EEC400;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 19px;
+    border-radius: 7px;
+}
+
+.dashbord-devis .button-demande .Passe-paiement {
+    background: #FF5B5B;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/*checkbox*/
+
+.dashbord-devis .devis input,
+.dashbord-devis .panier input,
+.dashbord-devis .devis-Managements input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 70px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.dashbord-devis input:checked~.checkmark:after {
+    display: block;
+}
+
+.dashbord-devis input:checked~.checkmark {
+    background-color: #EEC400;
+}
+
+.dashbord-devis label.container {
+    margin-left: 15px
+}
+
+.dashbord-devis .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dashbord-devis .num-checkbox td ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-evenly
+}
+
+.dashbord-devis .mask {
+    margin-left: -62px;
+    margin-right: 13px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.color-gris {
+    color: #686868;
+    font-size: 19px;
+    text-align: center;
+}
+
+.dashbord-devis tr {
+    border-bottom: 1px solid #d1d8f5;
+    line-height: 2.5;
+}
+
+.dashbord-devislabel.container {
+    margin-left: 15px;
+}
+
+.dashbord-devis label {
+    color: #757575;
+}
+
+.dashbord-devis hr {
+    width: calc(100% + 170px);
+    margin: 40px 0 40px -75px;
+}
+
+.dashbord-devis .num-checkbox td {
+    font-size: 20px;
+    color: #757575;
+    text-align: center;
+}
+
+.envoye {
+    font-family: montserrat-bold;
+    font-size: 1.4em;
+}
+
+.envoye img {
+    height: 12em;
+}
+
+.msg {
+    color: #334659;
+    font-family: 'montserrat-regular';
+    font-size: 1em;
+}
+
+.msg p span {
+    font-family: 'montserrat-Medium';
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+::ng-deep .modal.show .modal-dialog {
+    top: 12%;
+}
+
+
+/* modal passe commande */
+
+.demande-devis .padding-picture {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.border-picure {
+    border: 3px dashed #C2CDDA;
+    border-radius: 9px;
+    padding: 17px 10px;
+}
+
+.drag {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #555A6B;
+}
+
+.picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.margin-10 {
+    margin-left: 10%;
+}
+
+.margin-10 textarea {
+    height: 115px;
+}
+
+.or {
+    margin-top: -10px;
+    font-size: 0.8em;
+}
+
+#image_upload_preview {
+    height: auto !important;
+}
+
+.padding-picture {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.btn-commande {
+    text-align: right;
+    margin-right: 7%;
+    margin-top: 22px;
+}
+
+.btn-commande button {
+    font-family: 'montserrat-Medium';
+    background: #EEC400;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: #EEC400;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.browse-file a {
+    padding: 10px 25px;
+    background: #EEC400;
+    font-size: 0.7em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.color-img {
+    color: #B7B7B7;
+    font-family: 'montserrat-Medium';
+    font-size: 1em;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+
+/* 2eme modal commande */
+
+.passee {
+    font-family: 'montserrat-bold';
+    font-size: 1.1em;
+    color: #747F92;
+}
+
+.passee span {
+    font-size: 1.3em;
+    color: #EEC400;
+    font-family: 'montserrat-bold';
+}
+
+.Progress-indicator img {
+    width: 40%;
+}
+
+.confiance {
+    font-family: 'montserrat-Medium';
+    color: #747F92;
+    font-size: 1em;
+    text-align: center;
+}
+
+.confiance p {
+    text-align: center;
+    width: 57%;
+    margin: 4px auto 18px;
+}
+
+.confiance span {
+    font-size: 0.9em;
+}
+
+.modal-header span {
+    color: #FF5B5B;
+    border: 1px solid;
+    border: 2px solid #FF5B5B;
+    border-radius: 50%;
+    padding: 0px 6px;
+    font-size: 0.8em;
+}
+
+::ng-deep .modal-content {
+    border-radius: 20px;
+}
+
+@media screen and (max-width:991px) {
+    .dashbord-devis .liste-devis ul {
+        display: block;
+    }
+    .dashbord-devis .liste-devis ul li {
+        margin-top: 10px;
+    }
+    .dashbord-devis .button-demande {
+        display: block !important;
+    }
+    .dashbord-devis .button-demande div:last-child {
+        margin-top: 29px;
+    }
+    .dashbord-devis .button-demande a {
+        font-size: 17px;
+    }
+    .dashbord-devis .button-demande .Passe-paiement {
+        padding: 8px 21px;
+    }
+    .dashbord-devis .button-demande a {
+        padding: 8px 21px;
+    }
+    .table {
+        display: block;
+        overflow: scroll;
+        margin-top: 30px;
+    }
+    .checkmark {
+        margin-left: -44px;
+        position: static;
+        padding: 0 12px;
+    }
+    .dashbord-devis .num-checkbox td {
+        font-size: 13px;
+    }
+    .checkmark:after {
+        margin-top: -29px;
+        left: 42px;
+    }
+    .dashbord-devis input:checked~.checkmark:after {
+        margin-top: -25px;
+        display: block;
+        top: auto;
+        left: 34px;
+    }
+    .dashbord-devis hr {
+        width: 100%;
+    }
+}

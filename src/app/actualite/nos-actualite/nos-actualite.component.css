@@ -1,0 +1,147 @@
+        .nos-acualite {
+            margin-top: 35px
+        }
+        
+        .nos-acualite .container .SKILLED {
+            width: 55%;
+            margin: auto;
+            text-align: center
+        }
+        
+        .nos-acualite .container .SKILLED h4 {
+            font-size: 20px;
+            font-weight: 550;
+            color: #404040
+        }
+        
+        .nos-acualite .container .SKILLED h4:before,
+        .nos-acualite .container .SKILLED h4:after {
+            content: url('../../../assets/img/line-gris.png');
+            position: absolute;
+            margin-left: 6px;
+            top: -6px;
+            left: 22%;
+        }
+        
+        .nos-acualite .container .SKILLED h4:after {
+            right: -21%;
+        }
+        
+        .nos-acualite .container .SKILLED h3 {
+            font-size: 32px;
+            font-weight: 600;
+            transform: scale(1.2);
+        }
+        
+        .nos-acualite .container .SKILLED h3 span {
+            color: #EEC400
+        }
+        
+        .nos-acualite .container .SKILLED p {
+            font-size: 17px;
+            color: #AEAEAE;
+            line-height: 1.3
+        }
+        
+        .summer {
+            margin: 50px
+        }
+        
+        .summer .line-jaune img {
+            height: 650px
+        }
+        
+        .summer h5 {
+            color: #333333;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+        .summer p {
+            color: #777777;
+            font-size: 17px;
+            margin-bottom: 24px;
+            line-height: 1.2
+        }
+        
+        .summer span,
+        .summer a {
+            color: #777777;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 600
+        }
+        
+        .summer .skip {
+            margin-top: 11px
+        }
+        
+        .summer .tracteur {
+            margin-top: 145px
+        }
+        
+        .summer .tracteur1 {
+            margin-top: 155px
+        }
+        
+        .summer .lave-main {
+            margin-top: 145px
+        }
+        
+        .summer .line-jaune {
+            margin-top: -27px
+        }
+        
+        .summer .voir-plus {
+            margin-top: 50px;
+            margin-bottom: 50px
+        }
+        
+        .summer .voir-plus a {
+            background: #EEC400;
+            padding: 12px 58px;
+            border-radius: 9px;
+            color: #fff;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        
+        .summer .container .hills {
+            box-shadow: 1px 2px 11px 0px #aba7a7;
+            border-radius: 16px;
+            align-items: center
+        }
+        
+        .summer .container .hills img {
+            width: 8em;
+            height: 10em;
+            object-fit: cover;
+            border-bottom-left-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+        
+        @media screen and (max-width:991px) {
+            .nos-acualite .container .SKILLED {
+                width: 96%;
+            }
+            .nos-acualite .container .SKILLED h4:before,
+            .nos-acualite .container .SKILLED h4:after {
+                content: '';
+            }
+            .nos-acualite .container .SKILLED h3 {
+                font-size: 28px;
+            }
+            .summer {
+                margin: 10px;
+            }
+            .summer .tracteur1 {
+                margin-top: 35px;
+            }
+            .summer .container .hills .pl-0 {
+                text-align: center;
+            }
+            .summer .tracteur,
+            .summer .lave-main {
+                margin-top: 35px;
+            }
+        }

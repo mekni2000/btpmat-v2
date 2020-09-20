@@ -1,0 +1,36 @@
+.select-marque .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-marque h5 {
+    color: #FF5B5B;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    margin: 0px 10px;
+}
+
+.boutique-ingco,
+.boutique-kaiser {
+    text-align: center;
+    background: #fff;
+    width: 90%;
+    margin: auto;
+    border-radius: 7px;
+    position: relative;
+    font-size: 18px;
+    color: #B7B7B7;
+}
+
+.select-marque {
+    margin-bottom: 65px;
+}
+
+.boutique-ingco .owl-carousel.owl-drag .owl-item:hover,
+.boutique-kaiser .owl-carousel.owl-drag .owl-item:hover {
+    background: #FF5B5B;
+    color: #fff;
+    font-weight: 600;
+}

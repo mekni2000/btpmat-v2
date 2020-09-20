@@ -1,0 +1,128 @@
+.btpmat {
+    background: #F8F8F8;
+    padding: 12px 0px 9px 0px;
+}
+
+.align-logo {
+    align-items: baseline;
+}
+
+.btpmat .container .menu .search .form-inline input {
+    width: 95%;
+    outline: none;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-left: 53px;
+}
+
+.btpmat .container .menu .search .form-inline button {
+    box-shadow: none;
+    position: absolute;
+    right: 0;
+    width: 10%;
+    RIGHT: 1%;
+    background: #EEC400;
+    ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btpmat .container .nav {
+    justify-content: flex-end
+}
+
+.btpmat .container .nav .nav-link {
+    padding: 4px 10px 4px 3px;
+    font-weight: 600;
+}
+
+.btpmat .container .nav .number {
+    height: 18px;
+    width: 18px;
+    background: #FF5B5B;
+    border-radius: 50%;
+    position: absolute;
+    padding: 1px 5px;
+    font-size: 13px;
+    color: #fff;
+    top: -5PX;
+    RIGHT: -5%;
+}
+
+.not-found {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+}
+
+.dashboard-login {
+    position: absolute;
+    z-index: 555;
+    width: 144px;
+    overflow: hidden;
+    right: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 2;
+    background: #fff;
+}
+
+.btn-dashboard {
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.menu-dashboard {
+    overflow: hidden;
+}
+
+.mat-menu .nav-item a {
+    color: #000;
+    font-size: 15px;
+    font-family: montserrat-Medium;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+}
+
+.dropdown-login {
+    padding: 9px 9px;
+    overflow: hidden !important;
+}
+
+.dropdown-login a {
+    color: #737073;
+    text-decoration: none;
+}
+
+.not-found-dropdown {
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.cursor-pointeur {
+    cursor: pointer;
+}
+
+.gris {
+    color: #747F92 !important;
+    padding: 4px 10px 4px 3px;
+    font-family: 'montserrat-bold';
+}
+
+.currency-number {
+    height: 15px;
+    width: 15px;
+    background: #ff6868;
+    border-radius: 50%;
+    position: absolute;
+    padding: 1px 5px;
+    font-size: 10px;
+    color: #fff;
+    top: 7px;
+    right: 51px;
+    display: flex;
+    align-items: center;
+}

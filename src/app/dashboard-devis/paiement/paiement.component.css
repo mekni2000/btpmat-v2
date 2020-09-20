@@ -1,0 +1,133 @@
+  .banque .Paiement {
+      border-bottom: 2px solid #EEC400;
+      padding-bottom: 14px;
+  }
+  
+  .banque .Paiement span {
+      color: #EEC400;
+      letter-spacing: 1.2;
+      font-weight: 600;
+      font-size: 20px
+  }
+  
+  .banque h3 {
+      color: #747F92;
+      font-weight: 600;
+      font-size: 21px;
+  }
+  
+  .banque .form-check-label {
+      color: #747F92;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1.02;
+      margin-bottom: 11px;
+  }
+  
+  .banque .inputAddress {
+      color: #B8B8B8;
+      font-size: 17px;
+  }
+  
+  .banque .p-label {
+      color: #788995;
+      line-height: 1.3;
+      font-size: 17px;
+  }
+  
+  .banque .visa-carte {
+      text-align: right
+  }
+  
+  .banque .visa-carte span {
+      color: #EEC400;
+      font-weight: 600;
+      font-size: 18px;
+  }
+  
+  .banque .border-visa {
+      border: 1px solid #DDE3E8;
+      margin-top: 30px;
+      padding: 35px 35px 30px;
+      border-radius: 5px;
+  }
+  
+  .banque .border-visa input[type=text],
+  .passer-paiement .border-visa input[type=text] {
+      padding: 25px 15px
+  }
+  
+  .banque .information,
+  .banque .Résumé {
+      border: 1px solid #DDE3E8;
+      padding: 26px 20px 11px;
+      border-radius: 5px;
+      margin-top: 78px;
+  }
+  
+  .banque .Résumé {
+      margin-top: 30px;
+  }
+  
+  .banque .Résumé .d-flex {
+      margin-bottom: 25px
+  }
+  
+  .banque .Résumé p {
+      font-size: 18px;
+      color: #1D1D1B
+  }
+  
+  .banque .Résumé span {
+      color: #1D1D1B;
+      font-weight: 600;
+      font-size: 19px
+  }
+  
+  .banque .information p,
+  .passer-paiement .information p {
+      font-size: 17px;
+      color: #1D1D1B;
+      font-weight: 600;
+  }
+  
+  .banque .information .info-livraison p {
+      font-size: 19px;
+      color: #1D1D1B;
+      font-weight: 600;
+  }
+  
+  .banque .information span {
+      font-size: 17px;
+      font-weight: 400;
+      color: #838382
+  }
+  
+  .banque .information .d-flex {
+      line-height: 1.2;
+  }
+  
+  .banque .information .info-livraison {
+      margin-bottom: 25px;
+  }
+  
+  .banque .valider {
+      background: #EEC400;
+      text-align: center;
+      font-size: 21px;
+      color: #fff;
+      padding: 17px;
+      font-weight: 600;
+      border-radius: 5px;
+      margin-top: 25px;
+      cursor: pointer;
+  }
+  
+  .banque .valider a {
+      color: #fff;
+  }
+  
+  a,
+  a:hover {
+      text-decoration: none !important;
+  }

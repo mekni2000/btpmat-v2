@@ -1,0 +1,90 @@
+    .store-carousel img {
+        width: 50% !important;
+        margin: auto
+    }
+    
+    .store-carousel {
+        text-align: center;
+        padding: 17px 74px;
+    }
+    
+    .store-carousel h3 {
+        color: #232323;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1.2
+    }
+    
+    .store-carousel p {
+        color: #747F92;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .store-carousel h4 {
+        color: #747F92;
+        font-weight: 600;
+        font-size: 25px;
+        margin: 30px 0
+    }
+    
+    .store-carousel .d-flex img {
+        width: 80% !important;
+    }
+    
+    .store-carouselt .carousel-indicators {
+        display: block;
+        top: 28%;
+        margin-left: 0;
+        left: 2%;
+        bottom: auto
+    }
+    
+    .btp-store {
+        color: #EEC400
+    }
+    
+    .store-carousel .carousel-indicators li {
+        border-radius: 50%;
+        height: 7px;
+        width: 7px;
+        background-color: #636363;
+        margin-top: 22px;
+    }
+    
+    .store-carousel .carousel-indicators li.active::after {
+        border: 1px solid #636363;
+        width: 15px;
+        height: 15px;
+        bottom: -4px;
+        left: -4px;
+        border-radius: 50%
+    }
+    
+    .accepte {
+        margin-left: 15px;
+        text-align: left !important
+    }
+    
+    hr {
+        width: 95%;
+        border-top: 3px solid rgba(0, 0, 0, .1);
+        margin-top: -17px;
+    }
+    
+    @media screen and (max-width:991px) {
+        .store-carousel img {
+            width: 100% !important;
+            margin: auto;
+        }
+        .store-carousel {
+            padding: 17px 5px;
+        }
+        .store-carousel h3 {
+            font-size: 27px;
+        }
+        .store-carousel p {
+            color: #747F92;
+            font-size: 14px;
+        }
+    }

@@ -1,0 +1,123 @@
+<router-outlet></router-outlet>
+
+
+<div class="dashbord-devis">
+    <div class="devis">
+        <p>Home / Dashboard / <span>Devis</span></p>
+   
+        <div class="liste-devis">
+
+            <ul>
+                <li><a routerLink="../devis" class="active">Tous les devis</a></li>
+                <li><a routerLink="../devis-en-cours">Devis En cours</a></li>
+                <li><a routerLink="../accepted">Devis Acceptèes</a></li>
+                <li><a routerLink="../refused">Devis Refusée</a></li>
+            </ul>
+
+
+
+
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="devis-p">Dashboard des Devis</p>
+
+            </div>
+            <div class="col-lg-6 d-flex  button-demande" *ngIf="quote">
+
+                <div class="" *ngIf="checked" >
+
+                    <app-passe-commande-devis [quote]="quote"></app-passe-commande-devis>
+
+                </div>
+
+
+                <div class="">
+                    <a routerLink="/demande-devis" class="devis-1">Demander un devis</a>
+
+                </div>
+            </div>
+
+        </div>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col-3">
+                        <label class="container">Référence
+                                    <input type="checkbox" >
+                                    <!-- <span class="checkmark"></span>   -->
+                                  </label>
+
+                    </th>
+                    <th scope="col-3" class="color-gris">Objet</th>
+                    <th scope="col-3" class="color-gris">Date</th>
+                    <th scope="col-3" class="color-gris">Statut</th>
+
+                    <th scope="col" class="color-gris text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="num-checkbox" *ngIf="UserQuotations$ | async as quotations; else loading">
+                <tr *ngFor="let quote  of quotations?.paginatedList let i=index">
+                    <th scope="row">
+
+                        <label class="container">{{i}}
+                                    <input type="checkbox" name="product" (click)="showCommande(quote)">
+                                    <span class="checkmark"></span>  
+                                  </label>
+
+
+
+                    </th>
+                    <td>{{quote.label}}</td>
+                    <td>{{quote.createdAt | date: 'dd/MM/yyyy'}}</td>
+                    <td class="accepte" [ngSwitch]="quote.status">
+                        <span *ngSwitchCase="'1'" >En Cours</span>
+                        <span *ngSwitchCase="'2'" style="color: #EEC400;">Accepted</span>
+                        <span *ngSwitchCase="'3'" style="color: red;">Refused</span>
+                    </td>
+
+
+                    <td>
+                        <ul>
+                            <li>
+
+                                <app-view-product [quote]="quote" (onDataChange)="onSelect($event)"></app-view-product>
+                            </li>
+                            <!-- <li>
+                                <a href="#"><img src="../../../assets/img/supprimer.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../../assets/img/valider.svg" alt=""></a>
+                            </li> -->
+                        </ul>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="nombre-demande ">
+            <span>index Demandes</span>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ng-template #loading>
+    laoding...
+</ng-template>

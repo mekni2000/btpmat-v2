@@ -1,0 +1,45 @@
+@media screen and (max-width: 991px) {
+    .CONSEIL .BUILDER {
+        width: 100%;
+    }
+    .CONSEIL .row,
+    .CONSEIL .CONSEIL-pros {
+        margin-left: auto
+    }
+    .CONSEIL .BUILDER p {
+        font-size: 20px;
+        line-height: 1.2
+    }
+    .CONSEIL .BUILDER h6 {
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+    .SKILLED .consetetur p,
+    .CONSEIL .BUILDER span,
+    .CONSEIL .CONSEIL-pros span {
+        font-size: 15px
+    }
+    .CONSEIL .CONSEIL-pros p,
+    .CONSEIL .CONSEIL-pros a {
+        font-size: 18px
+    }
+    .CONSEIL .CONSEIL-pros {
+        padding: 25px 25px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .CONSEIL .BUILDER h6 {
+        font-size: 24px;
+    }
+    .CONSEIL .BUILDER p {
+        font-size: 30px;
+    }
+    .CONSEIL .BUILDER span {
+        font-size: 24px;
+        line-height: 1.1
+    }
+    .CONSEIL {
+        padding: 40px 0px 60px;
+    }
+}

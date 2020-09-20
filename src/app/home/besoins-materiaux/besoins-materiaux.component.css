@@ -1,0 +1,91 @@
+.materiel {
+  margin-top: 59px;
+}
+
+.materiel .besoin-materiaux {
+  margin-top: 80px;
+}
+
+.materiel .besoin-materiaux h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+}
+
+.materiel .besoin-materiaux p,
+.materiel .carousel-materiel span {
+  color: #aeaeae;
+  font-size: 17px;
+  line-height: 1.35;
+  margin-top: 18px;
+}
+
+.materiel .demande-devis2 {
+  margin-top: 38px;
+  transition: 0.3s ease-in-out;
+}
+
+.demande-devis2:hover {
+  transform: translateX(5px);
+  transition: 0.3s ease-in-out;
+}
+
+.materiel .demande-devis2 a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  background: #e8c004;
+  padding: 13px 25px;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 0px 0px 4px -1px #000000;
+}
+
+.materiel .owl-carousel .owl-item {
+  padding: 10px 18px;
+  box-shadow: 1px 0px 19px -15px #443f3f;
+}
+
+.materiel .carousel-materiel img {
+  width: auto;
+  display: inline-block;
+}
+
+.materiel .carousel-materiel p {
+  font-size: 17px;
+  font-weight: 550;
+  color: #000;
+  text-align: center;
+  margin: 17px auto;
+}
+
+.materiel .owl-nav {
+  text-align: center;
+}
+
+.materiel .carousel-materiel button {
+  outline: none;
+}
+
+.materiel .owl-prev {
+  margin-right: 25px;
+}
+
+.materiel .carousel-materiel .materiaux {
+  padding: 10px 18px;
+  box-shadow: 1px 0px 19px -15px #443f3f;
+  margin: 10px 0px;
+}
+
+.materiel .carousel-materiel .text-center img {
+  width: 36px;
+  margin-top: 16px;
+}
+
+.right-arrow {
+  width: 42px;
+}
+
+.owl-next {
+  background: none;
+}

@@ -1,0 +1,30 @@
+.home-dashboard .dashboard-bg {
+    background: #f8f8f8;
+    text-align: center;
+    max-width: 6.3333%;
+    padding-top: 8%;
+    padding-right: 0;
+}
+
+.home-dashboard .logo-dashboard {
+    margin-top: 30px;
+    transition: .5s all;
+}
+
+.logo-dashboard a {
+    margin: 5px;
+}
+
+.logo-dashboard a p {
+    color: #686868;
+    margin-left: 8px;
+}
+
+@media screen and (max-width:991px) {
+    .logo-dashboard a p {
+        display: none
+    }
+    .logo-dashboard a img {
+        margin-top: 15px;
+    }
+}

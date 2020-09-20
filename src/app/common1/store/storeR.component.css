@@ -1,0 +1,92 @@
+@media (max-width: 786px) {
+    .store {
+        text-align: center
+    }
+    .store .application h6 {
+        font-size: 20px;
+    }
+    .store .application p {
+        font-size: 15px
+    }
+    .store .application-ios {
+        margin-top: 39px;
+    }
+    .store .application .application-ios p {
+        font-size: 20px
+    }
+    .store .application .application-ios .ios-img img,
+    .store .application .application-ios .android-img img {
+        width: 58%;
+        margin-top: 20px
+    }
+    .store img {
+        width: 70%
+    }
+    .store .code-img {
+        margin-left: auto;
+        margin-top: 29px
+    }
+    .store .code-img p {
+        font-size: 15px;
+        margin-top: 9px
+    }
+    .store .application {
+        margin-top: 9px;
+    }
+    .store .application {
+        padding: 15px 10px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .store .application .application-ios .ios-img img,
+    .store .application .application-ios .android-img img {
+        width: 40%
+    }
+    .store .code-img img {
+        width: 30%
+    }
+    .store img {
+        width: 55%
+    }
+    .store .code-img img {
+        width: 40%
+    }
+    .store .application .application-ios .ios-img {
+        text-align: right
+    }
+    .store .application .application-ios .android-img {
+        text-align: left
+    }
+    .store .code-img p {
+        margin-top: 30px;
+    }
+    .store {
+        text-align: center;
+    }
+    .store .code-img {
+        margin-top: 38px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .store .application-ios {
+        margin-top: 27px;
+    }
+}
+
+@media (min-width: 1501px) {
+    .store .application p,
+    .store .code-img p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 1800px) {
+    .store .application p,
+    .store .code-img p {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+}

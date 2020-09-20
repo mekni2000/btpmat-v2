@@ -1,0 +1,82 @@
+<div class="dashbord-devis">
+    <div class="devis">
+        <p>Home / Dashboard / Devis / <span>Devis En Acceptèes</span></p>
+        <div class="liste-devis">
+
+            <ul>
+                <li><a routerLink="../devis" routerLinkActive="active">Tous les devis</a></li>
+                <li><a routerLink="../devis-en-cours" routerLinkActive="active">Devis En cours</a></li>
+                <li><a routerLink="../devis-accepte" routerLinkActive="active">Devis Acceptèes</a></li>
+                <li><a routerLink="../devis-refuse" routerLinkActive="active">Devis Refusée</a></li>
+            </ul>
+
+
+
+
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="devis-p">Dashboard des Devis</p>
+
+            </div>
+        </div>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <!-- 
+   <label class="container">Référence
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        -->
+                        <label for="">Référence</label>
+
+                    </th>
+                    <th scope="col" class="color-gris">Objet</th>
+                    <th scope="col" class="color-gris">Date</th>
+                    <th scope="col" class="color-gris">Statut</th>
+                    <th></th>
+                    <th scope="col" class="color-gris text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="num-checkbox">
+                <tr *ngFor="let product of products ; let index=index">
+                    <th scope="row">
+                        <!--
+                                <label class="container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        -->
+                        {{index}}
+
+
+
+                    </th>
+                    <td>test</td>
+                    <td>01/01/2020</td>
+                    <td class="accepte"> Acceptèes</td>
+                    <td></td>
+
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="../../../assets/img/yeux.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../../assets/img/supprimer.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../../assets/img/valider.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

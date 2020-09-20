@@ -1,0 +1,141 @@
+.equipe .protection .PROTECT {
+  color: #404040;
+  font-size: 17px;
+}
+
+.equipe .meilleur-equipe p {
+  color: #404040;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.equipe .meilleur-equipe span {
+  color: #eec400;
+}
+
+.equipe .demandez a {
+  padding: 13px 23px;
+}
+
+.equipe .demandez {
+  transition: 0.2s ease-in-out;
+  color: #ffffff;
+}
+.equipe .demandez:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+}
+
+.equipe .row {
+  align-items: center;
+}
+
+.equipe .protection {
+  background-image: url(../../../assets/img/bg-equipe.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 28px 18px 55px;
+}
+
+.equipe .protection .demandez {
+  margin-top: 30px;
+  margin-bottom: 66px;
+}
+
+.equipe .bd-example .carousel-caption {
+  color: #000;
+}
+
+.picsum-img-wrapper {
+  height: 55vh;
+}
+
+.equipe .index-img {
+  position: absolute;
+  left: -92%;
+  top: 75%;
+}
+
+.ssss {
+  position: absolute;
+  left: 0;
+}
+
+.equipe .protection .increment p {
+  color: #303030;
+  font-size: 28px;
+  font-weight: 550;
+}
+
+.equipe .protection .increment .increment-3 {
+  color: #3030309e;
+  font-size: 20px;
+}
+
+.carousel-control-prev {
+  left: -2%;
+}
+
+.equipe {
+  padding: 20px 0 30px;
+}
+
+.equipe .bd-example {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.equipe .w-100 {
+  height: 400px;
+  object-fit: contain;
+}
+
+.equipe .carousel-caption h5 {
+  color: #303030;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.equipe .carousel-caption p {
+  font-weight: 550;
+  font-size: 17px;
+  color: #303030;
+}
+
+.equipe .carousel-control-next {
+  position: static;
+  display: block;
+}
+
+.equipe .carousel-caption h5 {
+  color: #303030;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.equipe .demandez a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  background: #e8c004;
+  padding: 13px 47px;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 1px 0px 19px -15px #443f3f;
+}
+
+.equipe .carousel-control-prev {
+  position: static;
+  display: block;
+}
+
+.equipe .previous {
+  margin: 40px 0;
+}
+
+.equipe .increment {
+  margin: 0 20px;
+}

@@ -1,0 +1,76 @@
+ .service h4 {
+     color: #747F92;
+     font-weight: 600;
+     font-size: 20px;
+ }
+ 
+ .service p {
+     font-size: 17px;
+ }
+ 
+ .service p span {
+     color: #717171;
+ }
+ 
+ .service .envoyer {
+     margin: 30px 0;
+ }
+ 
+ .service a {
+     font-size: 25px;
+     background: #EEC400;
+     text-decoration: none;
+     padding: 10px 35px;
+     color: #fff;
+     border-radius: 5px
+ }
+ 
+ .service label {
+     color: #B7B7B7;
+     font-size: 19px;
+     margin-top: 30px
+ }
+ 
+ .service hr {
+     width: calc(100% + 170px);
+     margin: 40px 0 40px -75px;
+ }
+ 
+ .service p {
+     color: #afafaf;
+     font-size: 20px;
+ }
+ 
+ .service select {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
+     appearance: none;
+     height: 55px;
+ }
+ 
+ .service .reason::after {
+     content: '\25BC';
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     padding: 17px 21px;
+     background: #34495e;
+     cursor: pointer;
+     pointer-events: none;
+     margin-right: 3rem!important;
+     -webkit-transition: .25s all ease;
+     -o-transition: .25s all ease;
+     transition: .25s all ease;
+     background: transparent;
+     color: #747F92;
+ }
+ 
+ @media screen and (max-width:991px) {
+     .service p {
+         font-size: 17px;
+     }
+     .service a {
+         padding: 5px 30px;
+     }
+ }

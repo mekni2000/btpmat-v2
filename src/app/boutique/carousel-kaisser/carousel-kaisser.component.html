@@ -1,0 +1,23 @@
+<section class="INGCO " *ngIf="products$ | async as products">
+    <div class="container ">
+
+
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let product of products?.paginatedList">
+
+                <div class="item ">
+                    <div class="row ">
+                        <div class="col-lg-3 materiels " data-toggle="modal " data-target="#exampleModalLong9" >
+
+                            <app-produit-kaiser [product]="product" (selectedProduct)="onSelected($event)" [productIndex]="i+1"></app-produit-kaiser>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+
+
+    </div>
+</section>

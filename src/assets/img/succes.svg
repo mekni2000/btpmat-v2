@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330.071" height="330.071" viewBox="0 0 330.071 330.071">
+  <defs>
+    <filter id="succes" x="0" y="0" width="330.071" height="330.071" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="succes-2" data-name="succes" transform="translate(47.25 35.25)">
+    <g transform="matrix(1, 0, 0, 1, -47.25, -35.25)" filter="url(#succes)">
+      <path id="succes-3" data-name="succes" d="M117.785,0A117.785,117.785,0,1,1,0,117.785,117.785,117.785,0,0,1,117.785,0Z" transform="translate(47.25 35.25)" fill="#eec400" stroke="#fff" stroke-width="22.5"/>
+    </g>
+    <g id="icon_tick" transform="translate(95.034 101.305)">
+      <path id="Shape" d="M44.924.675a2.262,2.262,0,0,0-3.224,0L14.389,28.293,3.892,17.677a2.262,2.262,0,0,0-3.224,0,2.323,2.323,0,0,0,0,3.26l12.11,12.245a2.262,2.262,0,0,0,3.224,0L44.924,3.935A2.323,2.323,0,0,0,44.924.675Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

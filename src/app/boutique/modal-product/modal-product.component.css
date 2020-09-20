@@ -1,0 +1,107 @@
+.img-slide button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.img-slide img {
+    width: 90px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.modal1 h2 {
+    font-size: 35px;
+    color: #334659;
+    line-height: 1.2;
+    font-weight: 600
+}
+
+.modal1 h2 span {
+    font-size: 18px;
+    color: #ABB4BD
+}
+
+.modal1 p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.modal1 li {
+    color: #ABB4BD;
+    font-size: 18px
+}
+
+.modal1 ul {
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 0
+}
+
+.modal1 .row .row {
+    align-items: center
+}
+
+.modal1 h5 {
+    font-size: 20px;
+    color: #ABB4BD;
+    font-weight: 600;
+}
+
+ngb-carousel .picsum-img-wrapper {
+    height: 40vh;
+}
+
+.next {
+    position: absolute;
+    right: 38px;
+    width: 56px;
+    top: 20%;
+}
+
+.prev {
+    position: absolute;
+    left: 38px;
+    width: 56px;
+    top: 20%;
+}
+
+ngb-carousel .picsum-img-wrapper img {
+    width: 70%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: auto;
+}
+
+.modal1 h4 {
+    color: #FF5B5B;
+    font-size: 25px;
+    font-weight: 600
+}
+
+.modal1 h6 {
+    color: #424242;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.modal1 hr {
+    color: #424242;
+    width: 57px;
+    margin-left: 0;
+    margin-top: -19px;
+    border: 1px solid;
+}
+
+.modal1 .border-gris {
+    border-bottom: 3px dashed #91979D;
+    border-top: 3px dashed #91979D;
+    padding: 20px 0;
+    margin: 20px 0
+}
+
+.modal1 .marque {
+    color: #ABB4BD;
+    margin-bottom: 3px
+}

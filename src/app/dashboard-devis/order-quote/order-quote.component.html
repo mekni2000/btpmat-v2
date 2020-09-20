@@ -1,0 +1,314 @@
+<div class="dashbord-devis">
+    <div class="panier">
+        <p>Home / Dashboard / <span>Panier</span></p>
+        <div class="liste-devis">
+
+            <ul>
+                <li><a href="#" class="active">Panier En cours</a></li>
+                <li><a routerLink="../commande-passe">Commandes passée</a></li>
+                <li><a routerLink="../tous-commande">Tous les commandes</a></li>
+
+
+            </ul>
+
+
+
+
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="devis-p">Mon Panier</p>
+
+            </div>
+
+            <div class="col-lg-6   button-demande">
+                <div class="" *ngIf="checked">
+
+                    <app-passe-commande-panier></app-passe-commande-panier>
+
+
+                </div>
+                <a href="#" class="passer-paie1">Passer au paiement</a>
+            </div>
+
+
+
+        </div>
+        <div class="table-responsive-sm">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <label class="container">Référence
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>  
+                                    </label>
+
+                        </th>
+                        <th scope="col" class="color-gris">Produit</th>
+                        <th scope="col" class="color-gris">Catégorie</th>
+                        <th scope="col" class="color-gris">Prix</th>
+                        <th scope="col" class="color-gris">Quantité</th>
+                        <th scope="col" class="color-gris text-center">Actions</th>
+                    </tr>
+                </thead>
+                <div>
+
+                </div>
+                <tbody class="num-checkbox" *ngIf="carts$ | async as carts">
+                    <tr *ngFor="let cart of carts?.cartItems let index=index">
+                        <th scope="row">
+
+                            <label class="container">0 {{index}}
+                                        <input type="radio" name="radio-panier" (click)="showCommande($event)">
+                                         <span class="checkmark"></span>  
+                                    </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="../../../assets/img/mask1.svg" alt="">
+                            </div>
+                            {{cart.product.brandName}}
+                        </td>
+                        <td>{{cart.product.categoryName}}</td>
+                        <td>{{cart.product.price | currency: 'EUR'}}</td>
+                        <td>{{cart.count}}</td>
+
+                        <td>
+                            <ul>
+                                <!-- <li>
+                                    <a href="#"><img src="../../../assets/img/yeux.svg" alt=""></a>
+                                </li> -->
+                                <li>
+                                    <a href="#"><img src="../../../assets/img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../../../assets/img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">02
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask2.svg" alt="">
+                            </div>
+                            Stanley Heat Gun
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 20.90</td>
+                        <td>1</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">03
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask3.svg" alt="">
+                            </div>
+                            INGCO ANGLE
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 400.00</td>
+                        <td>8</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">04
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask4.svg" alt="">
+                            </div>
+                            Stanley Heat Gun
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 100.50</td>
+                        <td>2</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">05
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask5.svg" alt="">
+                            </div>
+                            INGCO 2000 W
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 609.90</td>
+                        <td>5</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">06
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask6.svg" alt="">
+                            </div>
+                            INGCO 2000 W
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 609.90</td>
+                        <td>7</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+
+                            <label class="container">07
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="img/mask7.svg" alt="">
+                            </div>
+                            INGCO 2000 W
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 609.90</td>
+                        <td>10</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,214 @@
+.container .call {
+    font-size: 13px;
+    margin-bottom: -6px;
+    margin-top: 3px;
+}
+
+.container .call ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0
+}
+
+.container .call ul li {
+    margin-right: 10px
+}
+
+.conver img {
+    margin-right: 5px;
+    width: 27px;
+}
+
+.container .call .investment .conver {
+    background: #eec400;
+    padding: 9px 18px 9px;
+    margin-top: -8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .call a {
+    text-decoration: none;
+    color: #747F92
+}
+
+.container .call a img {
+    margin-left: 5px
+}
+
+.container .langue {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px
+}
+
+
+/*modal convertisseur */
+
+.convertisseur .LEFT {
+    padding: 31px 30px;
+}
+
+.convertisseur .border-right {
+    padding: 31px 15px
+}
+
+.convertisseur p {
+    text-align: center;
+    color: #747F92;
+    font-size: 19px;
+    font-weight: 600
+}
+
+.convertisseur label {
+    color: #404040;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.convertisseur .line-vertical {
+    border-right: 1px solid #000;
+}
+
+.convertisseur .search {
+    box-shadow: none;
+    position: absolute;
+    width: 10%;
+    RIGHT: 25px;
+    background: none;
+    top: 54px;
+    border: none;
+    color: #4950577a;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer
+}
+
+.convertisseur .form-control.pr-3 {
+    padding-right: 40px !important
+}
+
+.convertisseur table th,
+.convertisseur table tr {
+    color: #5E6875;
+    font-size: 14px;
+    border-bottom: 1px solid #dee2e6
+}
+
+.convertisseur table tr .rouge {
+    color: #FF5B5B
+}
+
+.convertisseur table tr .bleu {
+    color: #185DDE
+}
+
+.convertisseur span {
+    color: #EEC400;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.convertisseur .chiffres p,
+.convertisseur .chiffres span {
+    font-weight: 400;
+    color: #C1C2C2;
+    font-size: 16px;
+}
+
+.convertisseur .chiffres span {
+    color: #EEC400
+}
+
+.convertisseur .Comparer {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.convertisseur .Comparer button {
+    outline: none;
+    background: #EEC400;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 54px;
+    color: #fff;
+    font-size: 17px;
+    width: 70%
+}
+
+.convertisseur .table td,
+.convertisseur .table th {
+    padding: 7px;
+}
+
+.modal-content {
+    padding: 10px 30px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px #ab9f9fe0;
+}
+
+.modal.show .modal-dialog {
+    max-width: 78%;
+    margin: 25px auto;
+}
+
+.convertisseur .form-control-lg {
+    padding: 4px 10px;
+    height: 35px;
+    font-size: 15px
+}
+
+.convertisseur .currency-shadow {
+    box-shadow: 0px 1px 10px -4px #72707087;
+    border-radius: 8px;
+    padding: 15px 23px;
+}
+
+.convertisseur .LEFT .form-control {
+    width: 100%;
+    background: #f1f1f1c2;
+}
+
+button.close {
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid #FF5B5B;
+    padding: 3px 8px;
+    font-size: 19px;
+    color: #FF5B5B;
+}
+
+.convertisseur .LEFT .Amount {
+    width: 31%;
+    margin-right: 1em;
+}
+
+::ng-deep .nsm-content {
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (max-width:991px) {
+    .convertisseur .LEFT {
+        padding: 5px;
+    }
+    .convertisseur .LEFT .form-control,
+    .convertisseur .Comparer button {
+        width: 100%;
+    }
+    .convertisseur .currency-shadow {
+        padding: 15px 10px;
+    }
+    .convertisseur .container {
+        max-width: 96%;
+    }
+    .convertisseur .form-control.pr-3 {
+        padding-right: 4px !important;
+        font-size: 11px;
+    }
+    .convertisseur .currency-shadow {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}

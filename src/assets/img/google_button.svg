@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172.485" height="64.816" viewBox="0 0 172.485 64.816">
+  <g id="google_button" transform="translate(-47 -345)">
+    <rect id="Rectangle_177" data-name="Rectangle 177" width="172.485" height="64.816" rx="5" transform="translate(47 345)" fill="#f14336"/>
+    <g id="search_2_" data-name="search (2)" transform="translate(120.891 364.445)">
+      <path id="Tracé_969" data-name="Tracé 969" d="M5.535,146.617l-.869,3.246-3.178.067A12.51,12.51,0,0,1,1.4,138.268h0l2.829.519L5.465,141.6a7.453,7.453,0,0,0,.07,5.018Z" transform="translate(0 -131.523)" fill="#fff"/>
+      <path id="Tracé_970" data-name="Tracé 970" d="M273.624,208.176a12.484,12.484,0,0,1-4.452,12.072h0l-3.563-.182-.5-3.148a7.443,7.443,0,0,0,3.2-3.8h-6.678v-4.941h12Z" transform="translate(-248.865 -198.021)" fill="#fff"/>
+      <path id="Tracé_971" data-name="Tracé 971" d="M49.327,316.542h0a12.492,12.492,0,0,1-18.819-3.821l4.047-3.313a7.427,7.427,0,0,0,10.7,3.8Z" transform="translate(-29.021 -294.315)" fill="#fff"/>
+      <path id="Tracé_972" data-name="Tracé 972" d="M47.688,2.875,43.642,6.187a7.426,7.426,0,0,0-10.949,3.889L28.625,6.745h0a12.491,12.491,0,0,1,19.064-3.87Z" transform="translate(-27.228)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,166 @@
+.actualite {
+    margin: 24px 0px 8px
+}
+
+.actualite p {
+    font-size: 18px;
+    color: #ABB4BD;
+    font-weight: 600
+}
+
+.actualite span {
+    font-size: 18px;
+    color: #ABB4BD;
+    margin: 0px 10px;
+}
+
+.actualite p:last-child {
+    font-size: 18px;
+    color: #EEC400;
+}
+
+.Skip-hill {
+    padding-bottom: 50px
+}
+
+.Skip-hill .carousel-indicators {
+    color: #000;
+    bottom: 185px
+}
+
+.Skip-hill .carousel-indicators li {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+.Skip-hill .carousel-caption {
+    position: initial;
+    text-align: left
+}
+
+.Skip-hill .carousel-caption p {
+    color: #83888d
+}
+
+.Skip-hill .carousel-caption h3 {
+    color: #333333;
+    font-weight: 600
+}
+
+.Skip-hill .startup-idea {}
+
+.Skip-hill .startup-idea a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.Skip-hill .startup-idea .Latest a {
+    color: #EEC400;
+    border-bottom: 2px solid #EEC400;
+    padding-bottom: 17px;
+    padding-right: 25px;
+    font-weight: 600
+}
+
+.Skip-hill .startup-idea .Popular a {
+    color: #ABB4BD;
+    font-weight: 600
+}
+
+.Skip-hill .startup span,
+.Skip-hill .startup p:last-child {
+    font-size: 13px;
+    color: #ABB4BD;
+    font-weight: 600
+}
+
+.Skip-hill .startup p {
+    color: #262c2f;
+    margin-bottom: 1px;
+    line-height: 1.2;
+    margin-top: 1px;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.Skip-hill .startup .Kadir {
+    color: #EEC400;
+}
+
+.Skip-hill .startup .voir-plus {
+    text-align: end;
+    margin-top: 25px;
+}
+
+.Skip-hill .startup .voir-plus a {
+    text-decoration: none;
+    font-weight: 600;
+    background: #EEC400;
+    padding: 10px 24px;
+    border-radius: 28;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.hills strong {
+    color: #333333;
+    font-family: 'montserrat-Medium';
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+.hills {
+    width: 80%;
+    margin-top: 32px;
+}
+
+.hills p,
+.hills span {
+    font-family: 'montserrat-Medium';
+    font-size: 1em;
+    color: #777777;
+    margin-top: 15px;
+}
+
+.startup img {
+    width: 12em;
+    height: 6em;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+@media (min-width:1600px) {
+    .actualite p,
+    .actualite p:last-child,
+    .Skip-hill .startup-idea .Latest a,
+    .Skip-hill .startup-idea .Popular a {
+        font-size: 22px;
+    }
+    .actualite i {
+        margin: 8px 10px;
+    }
+    .Skip-hill .startup span,
+    .Skip-hill .startup p:last-child {
+        font-size: 17px;
+    }
+    .Skip-hill .startup p,
+    .Skip-hill .carousel-caption p,
+    .CONSEIL .BUILDER span {
+        font-size: 20px;
+    }
+    .Skip-hill .startup span,
+    .Skip-hill .startup p:last-child,
+    .Skip-hill .startup .voir-plus a {
+        margin-top: 14px
+    }
+    .Skip-hill .carousel-caption h3,
+    .CONSEIL .BUILDER p {
+        font-size: 30px;
+    }
+    .Skip-hill .startup .voir-plus a {
+        font-size: 18px;
+        padding: 10px 38px;
+    }
+}

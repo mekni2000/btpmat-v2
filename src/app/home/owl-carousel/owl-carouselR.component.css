@@ -1,0 +1,8 @@
+@media screen and (max-width:991px) {
+    .img-caption .carousel-caption {
+        position: static;
+    }
+    .img-caption .carousel-caption {
+        width: 100%;
+    }
+}

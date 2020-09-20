@@ -1,0 +1,47 @@
+.store {
+    padding: 50px 0
+}
+
+.store .row {
+    align-items: center;
+}
+
+.store .application span {
+    color: #EEC400;
+}
+
+.store .application h6 {
+    color: #232323;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.store .application p {
+    color: #747F92;
+    font-size: 17px;
+    line-height: 1.2
+}
+
+.store .application-ios {
+    margin-top: 30px;
+}
+
+.store .application .application-ios p {
+    font-size: 25px;
+    color: #747F92;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.store .code-img p {
+    font-size: 14px;
+    font-weight: 550;
+    color: #747F92;
+    line-height: 1.08;
+    font-weight: 550
+}
+
+.store .code-img {
+    text-align: center;
+    margin-left: 35px;
+}

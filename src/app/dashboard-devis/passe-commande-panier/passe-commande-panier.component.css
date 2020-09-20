@@ -1,0 +1,132 @@
+::ng-deep .modal.show .modal-dialog {
+    top: 12%;
+}
+
+.passe-comd {
+    background: #FF5B5B;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 19px;
+    border-radius: 7px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.avez {
+    color: #747F92;
+    font-size: 1.5em;
+    font-family: 'montserrat-Medium';
+    font-weight: 600;
+}
+
+.avez span {
+    color: #EEC400;
+    font-size: 1em;
+    font-family: 'montserrat-bold';
+}
+
+.envoye {
+    padding: 30px 80px;
+    border-right: 1px solid #e8e8e8;
+}
+
+.coupon {
+    font-family: 'montserrat-Medium';
+    font-size: 1.2em;
+    color: #747F92;
+}
+
+.Utiliser p {
+    color: #C1C2C4;
+    font-size: 1.1em;
+    font-family: 'montserrat-Medium';
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.Utiliser button {
+    background: #EEC400;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 1.1em;
+    border-radius: 7px;
+    border: none;
+    margin-top: 22px;
+}
+
+.resume {
+    padding: 30px 80px;
+}
+
+.resume .d-flex {
+    color: #1D1D1B;
+    font-family: 'montserrat-Medium';
+    font-weight: 600;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+.total {
+    color: #1D1D1B;
+    font-family: 'montserrat-Medium';
+    font-size: 0.9em;
+}
+
+.Valider button {
+    color: #fff;
+    padding: 10px 61px;
+    font-size: 1.1em;
+    border-radius: 7px;
+    border: none;
+    margin-top: 22px;
+    background: #EEC400;
+}
+
+
+/* 2eme modal commande */
+
+.passee {
+    font-family: 'montserrat-bold';
+    font-size: 1.1em;
+    color: #747F92;
+}
+
+.passee span {
+    font-size: 1.3em;
+    color: #EEC400;
+    font-family: 'montserrat-bold';
+}
+
+.Progress-indicator img {
+    width: 40%;
+}
+
+.confiance {
+    font-family: 'montserrat-Medium';
+    color: #747F92;
+    font-size: 1em;
+    text-align: center;
+}
+
+.confiance p {
+    text-align: center;
+    width: 57%;
+    margin: 4px auto 18px;
+}
+
+.confiance span {
+    font-size: 0.9em;
+}
+
+.modal-header span {
+    color: #FF5B5B;
+    border: 1px solid;
+    border: 2px solid #FF5B5B;
+    border-radius: 50%;
+    padding: 0px 6px;
+    font-size: 0.8em;
+}
+
+::ng-deep .modal-content {
+    border-radius: 20px;
+}

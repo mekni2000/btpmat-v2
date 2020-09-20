@@ -1,0 +1,45 @@
+@media screen and (max-width: 991px) {
+    .FOURNITURE {
+        padding: 21px 0 40px;
+        background-size: cover
+    }
+    .FOURNITURE a {
+        padding: 11px 17px;
+    }
+    .FOURNITURE .btn-devis {
+        margin-top: 26px;
+        text-align: center;
+    }
+    .FOURNITURE .FOURNITURE-pose span {
+        font-size: 17px
+    }
+    .FOURNITURE .FOURNITURE-pose p,
+    .FOURNITURE .FOURNITURE-pose .GARANTIE {
+        font-size: 20px
+    }
+    .FOURNITURE .FOURNITURE-pose p {
+        margin-top: 9px
+    }
+    .FOURNITURE .FOURNITURE-pose {
+        text-align: center;
+        margin-top: 0
+    }
+    .FOURNITURE a {
+        font-size: 13px
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .FOURNITURE .FOURNITURE-pose p {
+        font-size: 41px;
+    }
+    .FOURNITURE .FOURNITURE-pose span {
+        font-size: 24px;
+    }
+    .FOURNITURE a {
+        font-size: 18px;
+    }
+    .FOURNITURE a {
+        padding: 15px 44px;
+    }
+}

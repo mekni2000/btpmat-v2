@@ -1,0 +1,129 @@
+<div class="container" >
+    <div class="d-flex actualite">
+        <p>Actualité</p>
+        <span>></span>
+        <p class=""> {{(article$ | async)?.title}} </p>
+    </div>
+</div>
+<section class="Skip-hill" *ngIf="article$ | async as article">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-7">
+                <ngb-carousel>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="article.photoURL">
+                        </div>
+                    </ng-template>
+                   
+                </ngb-carousel>
+                <div class="hills">
+                    <strong>Skip the hills and bag <br> these delightful summer</strong>
+                    <p>{{article.content}}</p>
+                    <span>{{article.createdAt | date}}</span>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-5 startup">
+                <ngb-tabset [destroyOnHide]="false">
+                    <ngb-tab title="Latest">
+                        <ng-template ngbTabContent>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle> Popular</ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <img src="../../../assets/img/startup.png">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span>1 HOUR AGO</span>
+                                    <p>New startup idea loremsu ipsumers Lorem ipsum lorem them startuping</p>
+                                    <p>by <span class="Kadir">Kadir Öz</span></p>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+
+                </ngb-tabset>
+                <div class="voir-plus">
+                    <a href="#">VOIR PLUS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

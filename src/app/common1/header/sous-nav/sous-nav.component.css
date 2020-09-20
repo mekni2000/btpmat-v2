@@ -1,0 +1,208 @@
+nav {
+  background: #747f92;
+  height: 39px;
+  box-shadow: -3px 13px 7px -9px #927979;
+}
+
+nav .container {
+  padding-left: 0px;
+  margin-left: 32px;
+}
+
+nav .navbar-nav {
+  width: 100%;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+nav .navbar-nav .nav-item:hover {
+  background: #fedc08;
+}
+
+nav .navbar-nav .nav-item {
+  position: relative;
+  transition: 0.5s all;
+  border-right: 1px solid #ffffff59;
+  padding: 8px 40px;
+}
+
+nav .navbar-nav .nav-item .img-nav {
+  margin-top: -9px;
+}
+
+.card-body {
+  position: absolute;
+  top: 39px;
+  left: 39px;
+  z-index: 11;
+  width: 90%;
+}
+
+.MATERIEL.col-lg-2 {
+  max-width: 13.666667%;
+}
+
+.MATERIEL .img-materiel {
+  width: 50px;
+  height: 50px;
+  padding: 11px;
+  border-radius: 50%;
+  background: #747f92;
+  margin: auto;
+}
+
+.MATERIEL a {
+  color: #747f92;
+  font-size: 13px;
+  text-align: center;
+  transition: 0.5s all;
+  text-decoration: none;
+}
+
+.MATERIEL {
+  margin-top: 20px;
+}
+
+.MATERIEL p {
+  font-size: 17px;
+  margin: 9px 0;
+}
+
+.MATERIEL a:hover {
+  color: #ff5b5b;
+}
+
+.cattegorie p {
+  color: #747f92;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.5s all;
+  cursor: pointer;
+  border-bottom: 1px solid #7070704d;
+  padding-bottom: 12px;
+}
+
+.cattegorie ul {
+  list-style: none;
+  padding-left: 0;
+  color: #686868;
+}
+
+.cattegorie .col-lg-2 {
+  margin-right: 26px;
+}
+
+.cattegorie ul li a {
+  color: #686868;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.cattegorie ul li a:hover,
+.cattegorie p:hover {
+  color: #eec400;
+}
+
+hr {
+  margin-left: -60px;
+  margin-top: 2px;
+}
+
+.MATERIEL {
+  margin-top: 0px;
+}
+
+.logo-responsive {
+  display: none;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.btpmat .container .nav .d-flex {
+  align-items: center;
+}
+
+.navbar-light .navbar-toggler {
+  background: #eec400;
+}
+
+.align-logo {
+  align-items: baseline;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.mat-menu-panel {
+  max-width: 100%;
+}
+
+/*menu */
+
+::ng-deep .mat-menu-panel {
+  width: 94vw;
+}
+
+::ng-deep .nav-tabs .nav-link {
+  font-family: "montserrat-Medium";
+  font-size: 1.2em;
+  color: #747f92;
+}
+
+::ng-deep .tab-content > .active {
+  color: #686868;
+  font-family: "montserrat-Medium";
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+.sous-categories {
+  color: #747f92;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.5s all;
+  cursor: pointer;
+  border-bottom: 1px solid #7070704d;
+  font-family: "montserrat-Medium";
+  padding-bottom: 12px;
+}
+
+.cars {
+  font-size: 1.1em;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  transition: 0.25s all;
+  transition: 0.25s all;
+  transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.cars:hover {
+  color: #eec400;
+}
+
+.subcategories {
+  margin-right: 15px;
+  border-bottom: 1px solid #c5c3c3;
+}
+
+::ng-deep ngb-tabset .nav-link.active {
+  color: #eec400 !important;
+}

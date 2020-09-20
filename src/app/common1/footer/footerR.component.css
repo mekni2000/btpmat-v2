@@ -1,0 +1,49 @@
+@media (max-width: 786px) {
+    footer .container .row .row {
+        text-align: center !important;
+        margin-top: 42px;
+    }
+    footer .container .row .row p {
+        text-align: left;
+        display: flex
+    }
+    footer .android-footer img {
+        width: 40%;
+        margin-bottom: 10px
+    }
+    footer .container .row .title-footer {
+        margin-bottom: 8px;
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    footer .adresse {
+        margin: 7px 0px !important;
+        text-align: left !important;
+    }
+    footer .adresse p {
+        margin-bottom: 1px
+    }
+    footer .adresse .col-lg-6 {
+        padding-left: 0
+    }
+    footer .container .row ul li a {
+        font-size: 15px
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    footer .container .row .title-footer {
+        margin-top: 29px
+    }
+}
+
+@media (min-width:1600px) {
+    footer,
+    footer .container .row ul li a,
+    footer .container .row a {
+        font-size: 18px
+    }
+    footer .container .row .title-footer {
+        font-size: 23px;
+    }
+}

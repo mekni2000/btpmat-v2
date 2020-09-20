@@ -1,0 +1,102 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <ngb-carousel #ngcarousel>
+                <ng-template ngbSlide id="one">
+                    <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide id="two">
+                    <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/ingco7.png" alt="ingco">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide id="three">
+                    <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide id="four">
+                    <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/ingco6.png" alt="ingco">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+
+            <div class="text-center d-flex img-slide">
+
+                <div class="picsum-img-wrapper" (click)="navigateToSlide('one')">
+                    <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                </div>
+                <div class="picsum-img-wrapper" (click)="navigateToSlide('two')">
+                    <img src="../../../assets/img/ingco7.png" alt="ingco">
+
+
+
+                </div>
+                <div class="picsum-img-wrapper" (click)="navigateToSlide('three')">
+                    <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                </div>
+                <div class="picsum-img-wrapper" (click)="navigateToSlide('four')">
+                    <img src="../../../assets/img/ingco6.png" alt="ingco">
+
+
+                </div>
+                <button (click)="getToPrev()" class="prev">
+                    <img src="../../../assets/img/arrow-left2.svg" alt="">
+                    
+                </button>
+                <button (click)="goToNext()" class="next">
+                    <img src="../../../assets/img/arrow-gris-right.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-6 modal1">
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2>INGCO Pistolet à colle chaude <span> REFERENCE:06254879</span></h2>
+                    <p>Product Details</p>
+                    <ul>
+                        <li>Tension: 220-240 V ~ 60Hz</li>
+                        <li>Puissance: 100 W</li>
+                        <li>Capacité collé: 13-18g / min</li>
+                        <li>Diamètre du barreau: 11.2mm</li>
+                        <li>Compris : 2 barreaux de silicone inclus 11.2mm en blister</li>
+                        <li>Warranty provided by Brand Owner / Manufacturer</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <h5>Price</h5>
+                    <h4>139.00 €</h4>
+                    <h6>240.00€</h6>
+                    <hr>
+                </div>
+            </div>
+            <div class="row border-gris">
+                <div class="col-lg-6 col-6 col-sm-6 col-md-6 pl-0">
+                    <p class="marque">MARQUE</p>
+                    <div class="">
+                        <img src="img/logo-ingco3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 d-none d-md-block"></div>
+                <div class="col-lg-3  col-6 col-sm-6  col-md-3 pr-0">
+                    <p class="marque">Quantity</p>
+                    <select class="form-control">
+                <option>3</option>
+                <option>3</option>
+                </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</div>

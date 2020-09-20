@@ -1,0 +1,136 @@
+@media(min-width:1600px) {
+    .demande-devis h2 {
+        font-size: 40px;
+    }
+    .store .code-img p,
+    .demande-devis p,
+    .demande-devis label,
+    .demande-devis input,
+    .demande-devis select,
+    .demande-devis textarea {
+        font-size: 20px;
+    }
+    .demande-devis label,
+    .demande-devis input,
+    .demande-devis select,
+    .demande-devis textarea,
+    .demande-devis .Submit,
+    .demande-devis .annuler {
+        font-size: 18px
+    }
+    .demande-devis label,
+    .demande-devis input,
+    .demande-devis select {
+        padding: 27px 12px;
+    }
+    .demande-devis label {
+        padding: 38px 0 0
+    }
+}
+
+@media screen and (max-width:786px) {
+    .demande-devis .type-user {
+        padding-right: 0 !important
+    }
+    .demande-devis .type-user::after {
+        margin-right: 0 !important
+    }
+    .demande-devis .form-row .pr-5 {
+        padding-right: 0 !important
+    }
+    .demande-devis label {
+        margin-top: 30px;
+    }
+    .demande-devis .code-postal::after {
+        margin-right: 0 !important
+    }
+    .demande-devis label,
+    .demande-devis input,
+    .demande-devis select,
+    .demande-devis .drag {
+        font-size: 15px;
+    }
+    .demande-devis .browse-file a {
+        font-size: 15px;
+    }
+    .btn-annuler {
+        text-align: center;
+    }
+    .demande-devis .annuler {
+        padding: 12px 55px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .demande-devis .row {
+        text-align: center
+    }
+    .demande-devis select {
+        height: 47px !important;
+    }
+    .demande-devis input,
+    .demande-devis select {
+        padding: 23px 14px;
+    }
+}
+
+@media (min-width:787px) and (max-width:991px) {
+    .demande-devis .form-row .pr-5 {
+        padding-right: 0 !important
+    }
+    .demande-devis .type-user::after,
+    .demande-devis .code-postal::after {
+        margin-right: 0px !important
+    }
+    .demande-devis label {
+        margin-top: 25px;
+    }
+    .demande-devis p {
+        line-height: 1.4;
+        font-size: 18px;
+    }
+    .demande-devis .drag {
+        font-size: 16px;
+    }
+    .demande-devis .browse-file a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1265px) {
+    .demande-devis select {
+        height: 35px !important
+    }
+    .demande-devis .type-user::after {
+        bottom: 0px;
+        padding: 8px 21px
+    }
+    .demande-devis .code-postal::after {
+        font-size: 15px;
+        padding: 6px 21px
+    }
+    .demande-devis label,
+    .demande-devis input,
+    .demande-devis select {
+        font-size: 15px
+    }
+    .demande-devis label {
+        margin-top: 17px
+    }
+}
+
+@media (min-width:1266px) and (max-width:1600px) {
+    .demande-devis select {
+        height: 37px !important
+    }
+    .modal2 .modal-content {
+        width: 45%
+    }
+    .demande-devis .type-user::after {
+        bottom: -8px;
+        right: -8px;
+    }
+    .demande-devis label {
+        margin-top: 20px;
+    }
+}

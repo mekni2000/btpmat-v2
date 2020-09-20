@@ -1,0 +1,108 @@
+<router-outlet></router-outlet>
+
+
+<div class="dashbord-devis">
+  <div class="devis">
+    <p>Home / Dashboard / <span>Devis</span></p>
+    <div class="liste-devis">
+
+      <ul>
+        <li><a routerLink="../devis">Tous les devis</a></li>
+        <li><a routerLink="../devis-en-cours" >Devis En cours</a></li>
+        <li><a routerLink="../accepted" class="active">Devis Acceptèes</a></li>
+        <li><a routerLink="../refused">Devis Refusée</a></li>
+      </ul>
+
+
+
+
+
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="devis-p">Dashboard des Devis</p>
+
+      </div>
+      <div class="col-lg-6 d-flex  button-demande">
+        <div class="">
+          <a routerLink="paiement" class="Passe-paiement">Passer au paiement</a>
+
+        </div>
+        <div class="">
+          <a href="file:///C:/Users/NewTech_Dell_5570/Desktop/btpmat/public/demande-devis.html" class="devis-1">Demander un devis</a>
+
+        </div>
+      </div>
+
+    </div>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">
+            <label class="container">
+              Référence
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+          </th>
+          <th scope="col" class="color-gris">Objet</th>
+          <th scope="col" class="color-gris">Date</th>
+          <th scope="col" class="color-gris">Statut</th>
+          <th></th>
+          <th scope="col" class="color-gris text-center">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="num-checkbox" *ngIf="UserQuotations$ | async as quotations; else loading">
+        <tr *ngFor="let quotation of quotations?.paginatedList let index=index">
+          <th scope="row">
+
+            <label class="container">
+              {{index}}
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+
+
+          </th>
+          <td>{{quotation.label}}</td>
+          <td>{{quotation.createdAt | date: 'dd/MM/yyyy'}}</td>
+          <td class="accepte">{{quotation.status}}</td>
+          <td></td>
+
+          <td>
+            <ul>
+              <li>
+                <a href="#"><img src="../../../assets/img/yeux.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../../assets/img/supprimer.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="#"><img src="../../../assets/img/valider.svg" alt=""></a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="nombre-demande ">
+      <span>index Demandes</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+<ng-template #loading>
+  laoding...
+</ng-template>

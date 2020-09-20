@@ -1,0 +1,143 @@
+<section class="demande-devis">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Demandez un devis</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut slabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 pr-5 type-user">
+
+                    <mat-form-field>
+                        <mat-label>Particulier</mat-label>
+                        <mat-select>
+                            <mat-option>
+                                <a routerLink="/coordinated-pro">Particulier</a>
+                            </mat-option>
+                            <mat-option>
+                                <a routerLink="coordinated-pro">Professionnel</a>
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+
+
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 pr-5 mb-3">
+                    <label for="validationDefault01">Nom</label>
+                    <input type="text" class="form-control" id="validationDefault01" [(ngModel)]="user.firstName" name="firstName" required>
+                </div>
+                <div class="col-md-4 pr-5 mb-3">
+                    <label for="validationDefault02">Prénom</label>
+                    <input type="text" class="form-control" id="validationDefault02" [(ngModel)]="user.lastName" name="firstName" required>
+                </div>
+                <div class="col-md-4 type-user pr-5 mb-3" *ngIf="categories$ | async as categories">
+                    <label for="validationDefaultUsername">Catégorie</label>
+                    <select class="form-control" (click)="selectCategory($event.target.value)" [(ngModel)]="category" name="category">
+                        <option [value]="null" [selected]="true">Select Category*</option>
+                        <option [value]="category.id" *ngFor="let category of categories?.paginatedList">
+                            {{category.name}}
+                        </option>
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-12 pr-5">
+                    <label for="validationDefaultUsername">Adresse</label>
+
+                    <input type="text" class="form-control" id="validationDefault02" [(ngModel)]="user.address" name="address" required>
+
+                </div>
+            </div>
+            <div class="form-row mt-3">
+
+                <div class="col-lg-8 pr-5">
+                    <div class="form-row ">
+                        <div class="col-md-6 type-user pr-5 mb-4">
+                            <label for="validationDefaultUsername">Pays</label>
+                            <select class="form-control" *ngIf="countries$ | async as countries" (click)="selectCountry($event.target.value)" [(ngModel)]="country" name="test">
+                                <option  *ngFor="let country of countries">{{country.name}}</option>
+                             
+
+                            </select>
+                        </div>
+                        <div class="col-md-6 pr-5 mb-4">
+                            <label for="validationDefault04">Ville</label>
+                            <input type="text" class="form-control" id="validationDefault04" [(ngModel)]="user.city" name="city" required>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="col-lg-6 code-postal pr-5">
+                            <label for="validationDefault05">Code postal</label>
+
+                            <select class="form-control">
+                                <option>5000</option>
+                                <option>2000</option>
+
+                            </select>
+
+                        </div>
+                        <div class="col-lg-6 pr-5">
+                            <label for="validationDefault05">Téléphone</label>
+                            <input type="text" class="form-control" id="validationDefault05" [(ngModel)]="user.phone" name="phone" required>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 pr-5">
+                    <label class="">Image</label>
+                    <div class="padding-picture">
+                        <div class="border-picure text-center">
+                            <div class="label-picture position-relative">
+                                <img src="img/file-picture.svg" alt="">
+                                <p class="drag">Glissez et déposez les fichiers ici</p>
+                                <input type="file" name="cameraImg" id="text-center browse-file" (change)="onSelectedFile($event)" />
+                            </div>
+                            <p class="text-center or ">ou</p>
+                            <div class="text-center browse-file">
+                                <a>Parcourir les fichiers</a>
+                            </div>
+                        </div>
+                        <div #image class="image-wrapper"></div>
+
+                    </div>
+
+
+                    <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+                    <button (click)="fileInput.click()">Select File</button>
+                    <button (click)="onUpload()">Upload!</button>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="form-row mt-3">
+                <div class="col-lg-12 pr-5">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Tapez votre message ici.." [(ngModel)]="user.description" name="description"></textarea>
+                </div>
+            </div>
+            <div class="mt-5 btn-annuler">
+                <button class="btn btn-primary Submit mt-3 mr-2 popup-btn" type="submit" (click)="uploadAll()">demande devis</button>
+                <button class="btn btn-primary annuler mt-3">Annuler</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<app-map></app-map>

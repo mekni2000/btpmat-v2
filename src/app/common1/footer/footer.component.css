@@ -1,0 +1,65 @@
+footer {
+    background-image: linear-gradient(to top, #232222eb 0%, #232222 100%);
+    padding: 25px 0px;
+}
+
+footer,
+footer .container .row ul li a,
+footer .container .row a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-img {
+    margin-bottom: 25px;
+}
+
+footer .container .row .title-footer {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 41px
+}
+
+footer .container .row ul {
+    list-style: none;
+    padding-left: 0
+}
+
+footer .container .row ul li {
+    margin-top: 7px
+}
+
+footer .container .row ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer .container .row .PHONE {
+    color: #eec400;
+    font-weight: 600
+}
+
+footer .android-footer {
+    margin-top: 25px
+}
+
+.COPYRIGHTS {
+    background: #232020;
+    text-align: center;
+    padding: 11px 0px 1px;
+    color: #fff;
+    font-weight: 550;
+}
+
+.COPYRIGHTS p {
+    font-size: 14px
+}
+
+.COPYRIGHTS span {
+    color: #eec400
+}
+
+footer a {
+    cursor: pointer;
+}

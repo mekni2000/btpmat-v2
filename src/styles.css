@@ -1,0 +1,396 @@
+    /* You can add global styles to this file, and also import other style files */
+    
+    @import "~ngx-smart-modal/ngx-smart-modal";
+    *,
+    *:after,
+    *:before {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        font-size: 15px;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    @font-face {
+        font-family: montserrat-bold;
+        src: url('./assets/font/montserrat-bold.ttf');
+    }
+    
+    @font-face {
+        font-family: montserrat-light;
+        src: url('./assets/font/montserrat-light.ttf');
+    }
+    
+    @font-face {
+        font-family: 'montserrat-Medium';
+        src: url('./assets/font/montserrat-Medium.ttf')
+    }
+    
+    @font-face {
+        font-family: 'montserrat-Regular';
+        src: url('./assets/font/Montserrat-Regular.ttf')
+    }
+    
+    .slider-home .carousel-control-next,
+    .slider-home .carousel-control-prev {
+        display: none;
+    }
+    
+    .slider-home .carousel-indicators {
+        right: 20px;
+    }
+    
+    .slider-home .carousel-indicators li {
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .slider-home .carousel-indicators li {
+        border-radius: 50%;
+        height: 7px;
+        width: 7px;
+        background-color: #fff !important;
+        margin-top: 22px;
+    }
+    
+    .carousel-indicators {
+        display: block;
+        top: 25%;
+        margin-right: auto;
+        right: 0;
+        left: auto;
+    }
+    
+    .slider-home .carousel-indicators li.active::after {
+        border: 1px solid #fff;
+        bottom: -4px;
+        left: -4px;
+        border-radius: 50%;
+    }
+    
+    .slider-home .carousel-indicators .active {
+        background: none
+    }
+    
+    .slider-home .carousel-indicators .active li::after {
+        border: 2px solid #fff;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .slider-home .carousel-indicators li::after {
+        border: 1px solid #636363;
+        width: 15px;
+        height: 15px;
+        bottom: -4px;
+        left: -4px;
+        border-radius: 50%;
+    }
+    
+    button,
+    a,
+    button:focus,
+    a:focus,
+    a:active {
+        outline: none !important;
+    }
+    
+    .equipe .carousel-control-next-icon:focus {
+        outline: none !important;
+    }
+    
+    img {
+        max-width: 100%
+    }
+    
+    * {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+    
+    .gris {
+        color: #747F92 !important;
+        border: none
+    }
+    
+    .owl-prev,
+    .owl-next {
+        outline: none !important;
+        background: none !important;
+    }
+    
+    .equipe .carousel-control-next-icon {
+        background-image: url(assets/img/right-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .equipe .carousel-control-prev-icon {
+        background-image: url(assets/img/left-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .electricity .carousel-control-next-icon {
+        background-image: url(assets/img/right-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .fenetre .carousel-control-next-icon {
+        background-image: url(assets/img/right-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .electricity .carousel-indicators,
+    .equipe .carousel-indicators,
+    .fenetre .carousel-indicators {
+        display: none;
+    }
+    
+    .fenetre .carousel-control-prev-icon {
+        background-image: url(assets/img/left-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .electricity .carousel-control-prev-icon {
+        background-image: url(assets/img/left-arrow.png);
+        width: 86px;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+    .equipe .carousel-control-prev {
+        position: absolute;
+        bottom: auto;
+        left: -107%;
+        TOP: 76%;
+    }
+    
+    .equipe .carousel-inner,
+    .electricity .carousel-inner,
+    .fenetre .carousel-inner {
+        overflow: initial;
+    }
+    
+    .equipe .carousel-control-next {
+        position: absolute;
+        bottom: auto;
+        left: -84%;
+        TOP: 76%;
+    }
+    
+    .electricity .carousel-control-prev {
+        position: absolute;
+        bottom: auto;
+        left: -63%;
+        TOP: 76%;
+    }
+    
+    .electricity .carousel-control-next {
+        position: absolute;
+        bottom: auto;
+        left: -45%;
+        TOP: 76%;
+    }
+    
+    .fenetre .carousel-control-prev {
+        position: absolute;
+        bottom: auto;
+        left: 181%;
+        TOP: 81%;
+    }
+    
+    .fenetre .carousel-control-next {
+        position: absolute;
+        bottom: auto;
+        right: -121%;
+        TOP: 81%;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+    
+    .mat-menu-panel {
+        max-width: 94% !important;
+    }
+    
+    .cdk-overlay-pane {
+        left: 5% !important;
+        /* top: 24.5% !important; */
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width:1200px) {
+        .container {
+            max-width: 95%
+        }
+    }
+    
+    @media (min-width: 1201px) and (max-width:1400px) {
+        .container {
+            max-width: 95%
+        }
+    }
+    
+    @media (min-width: 1501px) {
+        .container {
+            max-width: 95%
+        }
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+    }
+    
+    .nsm-dialog {
+        max-width: 90%;
+        padding: 3rem 1rem;
+    }
+    
+    .nsm-content {
+        border-radius: 15px;
+    }
+    
+    .arrow-left {
+        padding: 13px;
+        background: #ffff;
+        border-radius: 50%;
+        margin: 15px 7px 0px;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        transition: 0.1s all;
+    }
+    
+    .arrow-left:active {
+        background: #404040
+    }
+    
+    .boutique .owl-nav {
+        text-align: left;
+        margin-top: 22px;
+        margin-left: 62px;
+    }
+    
+    .boutique .owl-theme .owl-nav [class*=owl-] {
+        margin: 0px;
+        padding: 4px 3px;
+    }
+    
+    .owl-carousel.owl-drag .owl-item {}
+    
+    .boutique-ingco .owl-carousel.owl-drag .owl-item:hover,
+    .boutique-kaiser .owl-carousel.owl-drag .owl-item:hover {
+        background: #FF5B5B;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .boutique-ingco .owl-carousel.owl-drag .owl-item,
+    .boutique-kaiser .owl-carousel.owl-drag .owl-item {
+        padding: 18px;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+    
+    .boutique-ingco .owl-theme .owl-nav [class*=owl-],
+    .boutique-kaiser .owl-theme .owl-nav [class*=owl-] {
+        right: -29px;
+        left: auto;
+    }
+    
+    .boutique-ingco .owl-carousel .owl-nav button.owl-next,
+    .boutique-ingco .owl-carousel .owl-nav button.owl-prev,
+    .boutique-kaiser .owl-carousel .owl-nav button.owl-next,
+    .boutique-kaiser .owl-carousel .owl-nav button.owl-prev {
+        position: absolute;
+        top: 15px;
+        left: -29px;
+        font-size: 35px;
+        color: #FF5B5B;
+    }
+    
+    .font-heart fa {
+        color: #B3B3B3;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width:991px) {
+        .slider-home .carousel-indicators {
+            display: none
+        }
+        .fenetre .carousel-control-prev {
+            left: 5%;
+            width: 87px;
+        }
+        .fenetre .carousel-control-next {
+            right: 0%;
+            width: 87px;
+        }
+        .boutique .owl-nav {
+            margin-top: 3px;
+            margin-bottom: 15px;
+        }
+        .nsm-content {
+            margin: 0;
+            width: 100%;
+        }
+        .nsm-dialog {
+            max-width: 100%;
+        }
+    }
+    
+    .overlay.nsm-overlay-open {
+        background-color: transparent !important;
+    }
+    
+    .nsm-content {
+        padding: 34px 0;
+    }
+    
+    app-modal-product .carousel-control-prev,
+    app-modal-product .carousel-control-next {
+        display: none;
+    }
+    
+    .modal-25 .gallery-product .carousel-control-next,
+    .modal-25 .gallery-product .carousel-control-prev {
+        display: none;
+    }
+    
+    .modal-25 .carousel-control-next {
+        cursor: pointer;
+        right: 49px;
+    }
+    
+    .modal-25 .carousel-control-prev {
+        left: 49px;
+        cursor: pointer;
+    }

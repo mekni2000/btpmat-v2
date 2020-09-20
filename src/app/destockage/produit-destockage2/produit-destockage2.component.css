@@ -1,0 +1,67 @@
+.border-div {
+    box-shadow: -1px 1px 9px -2px #dcd0d0;
+    border-radius: 15px;
+    padding: 20px;
+    background: #fff;
+}
+
+.border-div .item .MECANIQUE p {
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600
+}
+
+.border-div .item .MECANIQUE span {
+    color: #DE7E73;
+    font-size: 15px;
+    font-weight: 550
+}
+
+.MECANIQUE p {
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.MECANIQUE span {
+    color: #DE7E73;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.panier span,
+.remise p {
+    color: #808080;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.panier-img img {
+    width: 25px;
+}
+
+.panier {
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.prix {
+    margin-top: 14px;
+    margin-bottom: -14px;
+}
+
+.panier-img {
+    margin-left: 7px;
+}

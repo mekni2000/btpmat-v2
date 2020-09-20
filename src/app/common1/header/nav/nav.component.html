@@ -1,0 +1,100 @@
+<div class="btpmat">
+    <div class="container">
+        <div class="row align-logo">
+            <div class="col-lg-3 col-8 col-sm-4 col-md-3 col-xl-2 p-md-0 logo margin-auto">
+                <div class="">
+                    <a routerLink="" class="lien-logo-accueil">
+                        <img src="../../../assets/img/logo1.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 col-sm-12 col-md-5 col-xl-7 p-md-0 margin-auto fade-input ">
+                <div class="menu">
+                    <div class="search">
+                        <form class="form-inline">
+
+                            <input id="search-input" #searchInput type="text" class="form-control mr-sm-2" placeholder="eg. Product" aria-label="eg. brando" (keydown.enter)="onSearch(searchInput.value)">
+
+                            <button class="btn my-2 my-sm-0" type="submit"><img src="../../../assets/img/search.png" (click)="onSearch(searchInput.value)"></button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-12 col-sm-12 col-md-4 col-xl-3 p-md-0 margin-auto">
+                <nav class="navbar navbar-expand-md navbar-light bg-light ">
+                    <div class="container">
+
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button> -->
+
+                        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                            <ul class="navbar-nav mr-auto">
+
+                            </ul>
+                            <ul class="navbar-nav ">
+
+                                <ng-template #anonymousUser>
+                                    <li class="d-flex">
+                                        <div class="">
+                                            <img src="../../../assets/img/client.png">
+                                        </div>
+                                        <div class="" data-toggle="modal" data-target="#espace-client">
+                                            <a class="nav-link gris lien-espace" routerLink="/espace-client">Espace Client</a>
+                                        </div>
+
+                                    </li>
+                                    <!-- <li class="d-flex position-relative">
+                                <div class="">
+                                    <a class="nav-link gris" href="#">3.500.000 €</a>
+                                </div>
+                
+                                <div class="">
+                                    <img src="../../../assets/img/shopping.png">
+                                </div>
+                                <div class="number">
+                                    <span class="">2</span>
+                                </div>
+                            </li> -->
+                                </ng-template>
+                                <li class="nav-item position-relative" *ngIf="user">
+                                    <a class="nav-link d-flex align-items-end" routerLink="/user/{{user.id}}/panier">
+                                        <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> -->
+                                        <img src="../../../../assets/img/shopping.png" alt="">
+                                        <span class="badge badge-warning badge-pill currency-number" *ngIf="(cart$ | async) as cart">
+                                  {{ cart?.cartItems.length }}  
+                              </span>
+
+                                        <span *ngIf="(cart$ | async) as cart">{{cart.total | currency: 'EUR'}}</span>
+                                    </a>
+                                </li>
+                                <li ngbDropdown *ngIf="user; else anonymousUser" class="nav-item dropdown">
+                                    <!-- <li ngbDropdown class="nav-item dropdown"> -->
+                                    <a ngbDropdownToggle class="nav-link dropdown-toggle cursor-pointeur" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="gris"> {{ user.userName }}</span> <img src="../../../../assets/img/not-found.png" class="not-found" alt="">
+                                    </a>
+                                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                                        <a class="dropdown-item" routerLink="/user/{{user.id}}/devis">My Orders</a>
+                                        <ng-container *ngIf="user.accountType == 'PRO' ">
+                                            <a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a>
+                                            <a class="dropdown-item" routerLink="/admin/products">Manage Products</a>
+                                        </ng-container>
+                                        <a class="dropdown-item" (click)="logout()">Log Out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

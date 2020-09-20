@@ -1,0 +1,30 @@
+.industrie {
+    margin: 40px auto;
+    width: 95%;
+}
+
+.industrie .pr-0 {
+    text-align: right
+}
+
+.industrie .row {
+    align-items: center
+}
+
+.industrie .container {
+    background: #fff
+}
+
+.industrie .gamme-complete {
+    padding: 71px 40px
+}
+
+.industrie .gamme-complete p {
+    color: #404040;
+    font-size: 23px;
+    line-height: 1.30;
+}
+
+.industrie .gamme-complete span {
+    color: #F1A31C
+}

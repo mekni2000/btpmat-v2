@@ -1,0 +1,111 @@
+<div class="passe-comd" (click)="open(content, products)" *ngIf="products">
+    <a class="Passe-paiement">Passer la commande</a>
+</div>
+<ng-template #content let-modal>
+    <div class="modal-header">
+
+        <div class="">
+            <img src="../../../assets/img/logo-btpmat.png" alt="">
+        </div>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body container">
+        <div class="row">
+            <div class="col-lg-6 text-center envoye">
+                <div class="avez">
+                    <p>Avez-Vous Un <br>
+                        <span>Coupon De Promotion ?</span></p>
+                </div>
+                <div class="coupon">
+                    <p>Si vous avez un coupon de promotion, veuillez rentrer le code ci-dessous.</p>
+                </div>
+
+                <div class="Utiliser">
+                    <p for="">Coupon </p>
+                    <input type="text" class="form-control">
+                    <div class="">
+                        <button>Utiliser le coupon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 resume">
+                <div class="d-flex">
+                    <img src="../../../assets/img/shopping-jaune.png" alt="">
+                    <p class="mb-0 ml-4">Résumé Panier</p>
+                </div>
+
+                <div class="row mt-4 total">
+                    <div class="col-lg-6">
+                        <p>Total hors remise :</p>
+                    </div>
+                    <div class="col-lg-6 text-right" *ngIf="total">
+                        <p>{{total | currency : 'EUR'}}</p>
+                    </div>
+                </div>
+                <div class="row  total">
+                    <div class="col-lg-6">
+                        <p>Remise immédiate :</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>€ 79.1</p>
+                    </div>
+                </div>
+                <div class="row total">
+                    <div class="col-lg-6">
+                        <p>Frais de livraison :</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>Gratuite</p>
+                    </div>
+                </div>
+                <div class="row total mt-4">
+                    <div class="col-lg-6">
+                        <p>Total à payer :</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>€ 1000.90</p>
+                    </div>
+                </div>
+                <div class="Valider text-center" (click)="modal.dismiss('Cross click') ; open2(content2)">
+                    <button>Valider</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</ng-template>
+
+<!-- 2 eme modal de passe commande -->
+
+<ng-template #content2 let-modal class="content2" id="content2">
+
+    <div class="modal-header">
+
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <div class="modal-body container">
+
+        <div class="text-center passee">
+            <p>Commande Passée <br> avec <span>Succès !</span></p>
+        </div>
+        <div class="Progress-indicator text-center">
+            <img src="../../../assets/img/Progress-indicator.png" alt="">
+        </div>
+        <div class="confiance">
+            <p>Merci pour votre confiance Un Email vous sera envoyé avec tous les détails nécessaires.
+            </p>
+            <span>Pour plus d'information merci de nous contacer</span>
+        </div>
+        <div class="right-arrow text-center mt-2 mb-2">
+            <a href="">
+                <img src="../../../assets/img/right-arrow.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+</ng-template>

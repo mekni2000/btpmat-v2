@@ -1,0 +1,54 @@
+.promotions .offres .date-orange {
+    margin-left: 20px;
+    color: #F29D32;
+}
+
+.promotions .offres .ingco-rouge {
+    color: #FF5B5B;
+}
+
+.promotions .offres-ingco {
+    margin: 30px 0
+}
+
+.promotions .offres-ingco p {
+    margin-bottom: 3px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2;
+}
+
+.promotions .date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px
+}
+
+.promotions .date p {
+    font-size: 20px
+}
+
+.promotions .offres-ingco img {
+    width: 100%
+}
+
+.promotions p {
+    color: #afafaf;
+    font-size: 20px;
+}
+
+.promotions p span {
+    color: #717171;
+}
+
+@media screen and (max-width:991px) {
+    .promotions .date p {
+        font-size: 14px;
+    }
+    .promotions .offres-ingco p {
+        font-size: 20px;
+    }
+    .promotions .date p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,33 @@
+        .boutique .devis-boutique a {
+            color: #404040;
+            border-left: 3px solid #404040;
+            font-weight: 600;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        
+        .boutique .boutiqueLogo p {
+            color: #404040;
+            margin-top: 37px;
+        }
+        
+        .boutique .boutique-logo p {
+            font-size: 80px;
+            letter-spacing: 3.2;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .boutique .devis-boutique {
+            margin-top: 37px;
+        }
+        
+        .boutique-logo img {
+            max-width: 80%;
+        }
+        
+        @media screen and (max-width:991px) {
+            .boutique .boutique-logo p {
+                font-size: 31px;
+            }
+        }

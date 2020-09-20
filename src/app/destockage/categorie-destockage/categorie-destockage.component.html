@@ -1,0 +1,32 @@
+<section class="select-marque ">
+    <div class="container ">
+        <div class="">
+            <img src="../../../assets/img/line-rouge.png" alt="">
+        </div>
+        <div class="text-center ">
+            <h5>INGCO</h5>
+        </div>
+        <div class="">
+            <img src="../../../assets/img/line-rouge.png" alt="">
+
+        </div>
+
+    </div>
+</section>
+
+
+<div class="boutique-ingco ">
+    <div class="container ">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let categorie of categories">
+                <div class="item ">
+                    <p>{{categorie}}</p>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+
+
+    </div>
+</div>

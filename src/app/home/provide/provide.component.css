@@ -1,0 +1,59 @@
+.camion-btpmat {
+  margin: 49px auto 67px;
+}
+
+.camion-btpmat .row {
+  align-items: center;
+}
+
+.camion-btpmat .EVERYWHERE {
+  margin-top: 70px;
+}
+
+.camion-btpmat .EVERYWHERE span {
+  color: #404040;
+  font-size: 17px;
+}
+
+.camion-btpmat .EVERYWHERE h2 {
+  font-weight: bold;
+  color: #404040;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.camion-btpmat .EVERYWHERE .provide span {
+  font-size: 35px;
+  color: #eec400;
+}
+
+.camion-btpmat p {
+  color: #626262;
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 25px 0 25px;
+}
+
+.camion-btpmat a,
+.FOURNITURE a,
+.equipe .demandez a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  background: #e8c004;
+  padding: 13px 47px;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 1px 0px 19px -15px #443f3f;
+}
+
+.camion-btpmat .img-camion {
+  margin-top: 41px;
+}
+.about-us {
+  transition: 0.2s ease-in-out;
+}
+.about-us:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+}

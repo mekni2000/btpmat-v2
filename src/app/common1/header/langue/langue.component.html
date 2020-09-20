@@ -1,0 +1,162 @@
+<div class="container">
+    <div class="call row">
+        <div class="col-lg-4 col-xl-3  col-10 col-md-6 col-sm-10 d-flex pl-0 mt-1" *ngIf="languages$ | async as languages">
+            <ul *ngFor="let language of languages">
+                <li (click)="onSelected(language)">
+                    <a>{{language.languageCode}} <img src="../../../assets/img/china.svg"></a>
+                </li>
+            </ul>
+
+            {{"%android_aucun_article_disponible%" | translate}}
+
+
+        </div>
+        <div class="col-lg-5 col-xl-6 d-none d-lg-block"></div>
+        <div class="col-lg-3 col-2 col-md-6 col-sm-2  row  langue">
+            <div class="investment">
+                <div class="conver" href="#" (click)="ngxSmartModalService.getModal('myModal').open()">
+                    <img src="../../../assets/img/investment.svg">
+                    <span>Convertisseur de devise</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<ngx-smart-modal #myModal identifier="myModal">
+    <div class="convertisseur">
+
+
+
+        <!-- Modal -->
+        <div class="container">
+
+            <div class="logo-popup">
+                <img src="../../../assets/img/logo-popup.png">
+            </div>
+            <div class="row">
+
+                <!-- <div class="col-lg-7 col-12 border-right">
+                    <div class="currency-shadow">
+
+
+                        <form action="" name="">
+                            <input type="text" class="form-control pr-3" placeholder="Currency pairs 46 Volume of trading during 24 hours 6949 BTC">
+                            <button class="search" type=""><i class="fas fa-search"></i></button>
+                        </form>
+                        <span>MY CURRENCY</span>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Currency pair</th>
+                                    <th scope="col">Buy</th>
+                                    <th scope="col">Sell</th>
+                                    <th scope="col">Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">BTC/USD</th>
+                                    <td>7610</td>
+                                    <td>7630</td>
+                                    <td class="rouge"><i class="fas fa-arrow-up"></i>8.74%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BTC/EUR</th>
+                                    <td>6263.26</td>
+                                    <td>6299.87</td>
+                                    <td class="bleu"><i class="fas fa-arrow-down"></i>9.71%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BTC/RUB</th>
+                                    <td>448450</td>
+                                    <td>449990.61</td>
+                                    <td class="bleu"><i class="fas fa-arrow-down"></i>8.57%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BTC/UAH</th>
+                                    <td>18960000</td>
+                                    <td>191190.57</td>
+                                    <td class="rouge"><i class="fas fa-arrow-up"></i>9.20%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BTC/PLN</th>
+                                    <td>25938.50</td>
+                                    <td>25996.47</td>
+                                    <td class="bleu"><i class="fas fa-arrow-down"></i>10.91%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span>OTHERS</span>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Currency pair</th>
+                                    <th scope="col">Buy</th>
+                                    <th scope="col">Sell</th>
+                                    <th scope="col">Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">BTC/USD</th>
+                                    <td>702</td>
+                                    <td>705.99</td>
+                                    <td>4.77%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">BTC/EUR</th>
+                                    <td>41342.90</td>
+                                    <td>41713.73</td>
+                                    <td>4.80%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div> -->
+
+                <div class="col-lg-12 col-12 LEFT">
+
+                    <p class="text-left">Convertisseur de devises BTPMAT</p>
+                    <form class="">
+                        <label>From</label>
+                        <div class=" ">
+                            <select class="form-control form-control-lg">
+                                                <option><img src="../../../assets/img/usd.png">USD</option>
+                                              </select>
+                            <label>To</label>
+                            <select class="form-control form-control-lg">
+                                                  <option><img src="../../../assets/img/eur.png">EUR</option>
+                                                </select>
+                        </div>
+                        <label>Amount</label>
+                        <div class="d-flex">
+
+                            <input type="text" placeholder="500" class=" Amount form-control pl-3" id="staticEmail2">
+                            <select class="Amount form-control form-control-lg">
+                                                <option><img src="../../../assets/img/eur.png">EUR</option>
+                                              </select>
+                        </div>
+                        <div class="Comparer">
+                            <button type="">Comparer</button>
+                        </div>
+
+                        <div class="chiffres ">
+                            <p class="text-left">Tous les chiffres correspondent à des taux du marché moyen <span>en direct</span></p>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</ngx-smart-modal>

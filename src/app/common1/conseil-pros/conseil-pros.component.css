@@ -1,0 +1,88 @@
+.CONSEIL .BUILDER span {
+    color: #AEAEAE;
+    font-size: 17px;
+    font-weight: 550
+}
+
+.CONSEIL {
+    background-image: linear-gradient(120deg, #cfcece6b 0%, #e4e4e1bf 100%);
+    padding: 20px 0px 30px
+}
+
+.CONSEIL .BUILDER {
+    margin: 15px auto;
+    width: 60%;
+    text-align: center
+}
+
+.CONSEIL .BUILDER p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.CONSEIL .BUILDER .STRUC {
+    color: #EEC400;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.CONSEIL .BUILDER h6 {
+    color: #404040;
+    font-size: 20px;
+}
+
+
+/*
+.CONSEIL .BUILDER h6::before{
+content:url('../img/line-struc.png');
+ position: absolute;
+bottom: 14px;
+left:27%;
+margin-left:6px
+}
+*/
+
+.CONSEIL .CONSEIL-pros {
+    border: 1px solid #CECFD1;
+    padding: 30px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px
+}
+
+.CONSEIL .CONSEIL-1 {
+    margin-left: -38px
+}
+
+.CONSEIL .row {
+    margin-left: 5%;
+}
+
+.CONSEIL .CONSEIL-pros p,
+.CONSEIL .CONSEIL-pros a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.CONSEIL .CONSEIL-pros span {
+    color: #626262;
+    font-weight: 400;
+    font-size: 17px
+}
+
+.CONSEIL .CONSEIL-pros .READ {
+    margin-top: 14px
+}
+
+.conseil-background {
+    background: #EEC400;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}

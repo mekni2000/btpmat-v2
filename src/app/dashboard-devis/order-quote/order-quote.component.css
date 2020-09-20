@@ -1,0 +1,152 @@
+.dashbord-devis p {
+    color: #AFAFAF;
+    font-size: 20px;
+}
+
+.dashbord-devis .devis-p {
+    color: #747F92;
+    font-weight: 600 !important;
+    letter-spacing: 1.1
+}
+
+.dashbord-devis p span {
+    color: #717171
+}
+
+.dashbord-devis .liste-devis ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0
+}
+
+.dashbord-devis .liste-devis ul li {
+    margin-right: 50px
+}
+
+.dashbord-devis .liste-devis ul li a {
+    color: #686868;
+    transition: 0.5s all;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.dashbord-devis .liste-devis ul li .active,
+.dashbord-devis .liste-devis ul li a:hover,
+.dashbord-devis .liste-devis ul li a:active {
+    color: #EEC400;
+    font-weight: bold;
+    border-bottom: 2px solid #EEC400;
+    padding-bottom: 7px;
+}
+
+.dashbord-devis .button-demande {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.dashbord-devis .button-demande a {
+    background: #EEC400;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 19px;
+    border-radius: 7px;
+}
+
+.dashbord-devis .button-demande .Passe-paiement {
+    background: #FF5B5B;
+    margin-right: 20px;
+}
+
+
+/*checkbox*/
+
+.dashbord-devis .devis input,
+.dashbord-devis .panier input,
+.dashbord-devis .devis-Managements input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 70px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.dashbord-devis input:checked~.checkmark:after {
+    display: block;
+}
+
+.dashbord-devis input:checked~.checkmark {
+    background-color: #EEC400;
+}
+
+.dashbord-devis label.container {
+    margin-left: 15px
+}
+
+.dashbord-devis .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dashbord-devis .num-checkbox td ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-evenly
+}
+
+.dashbord-devis .mask {
+    margin-left: -62px;
+    margin-right: 13px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.color-gris {
+    color: #686868;
+    font-size: 19px;
+}
+
+.dashbord-devis tr {
+    border-bottom: 1px solid #d1d8f5;
+    line-height: 2.5;
+}
+
+.dashbord-devislabel.container {
+    margin-left: 15px;
+}
+
+.dashbord-devis label {
+    color: #757575;
+}
+
+.dashbord-devis hr {
+    width: calc(100% + 170px);
+    margin: 40px 0 40px -75px;
+}
+
+.dashbord-devis .num-checkbox td {
+    font-size: 20px;
+    color: #757575;
+}

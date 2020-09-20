@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "https://api.btpmat.ci",
+    "secure": false,
+    "logLevel": "debug",
+   
+    "changeOrigin": true
+  }
+}

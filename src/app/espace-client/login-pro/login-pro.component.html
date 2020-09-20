@@ -1,0 +1,103 @@
+<section class="espace-client">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 background-gris">
+                <app-carousel-store></app-carousel-store>
+
+            </div>
+            <div class="col-lg-1 col-xl-2"></div>
+            <div class="col-lg-5 col-xl-4 inscription">
+                <div class="bienvenue">
+                    <h2>Inscrivez-vous sur BTPMAT</h2>
+                    <div class="p-span">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
+
+                    </div>
+                </div>
+                <div class="row  Particulier1">
+                    <div class="col-lg-6 col-6 col-sm-6 col-md-6 Particulier0 text-left">
+                        <a routerLink="/espace-client">Particulier</a>
+                    </div>
+                    <div class="col-lg-6 col-6 col-sm-6 col-md-6 Professionnel">
+                        <p class="border-jaune">Professionnel</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="Professionnel1">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4"  placeholder="email" id="formGroupExampleInput" placeholder="Email">
+                        </div>
+                        <div class="form-group  mb-0 ">
+
+                            <input type="text" class="form-control mt-4" id="formGroupExampleInput2" placeholder="Numéro de téléphone">
+                        </div>
+                        <div class="form-group row  mb-0 ">
+                            <div class="col-12 col-sm-12 col-md-6 ">
+                                <input type="text" class="form-control mt-4" id="formGroupExampleInput2" placeholder="Nom de socité">
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 select-fonction">
+                                <select class="form-control form-control-lg mt-4">
+                        <option>Fonction</option>
+                    </select>
+                            </div>
+                        </div>
+                        <div class="form-check mt-3 rester d-flex">
+                            <div class="">
+                                <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="accepte">J'accepte <span class="condition">les Conditions de vente </span>de BTPMAT.</p>
+                        </label>
+                            </div>
+
+                        </div>
+                        <div class="connecter">
+                            <button type="" data-toggle="modal" data-target="#succes">Suivant</button>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        <p class="text-center">Vous n'avez pas encore de compte ? <a >S'inscrire</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 
+    <h1 *ngIf="auth.user | async">Welcome {{ (auth.user | async)?.email }}!</h1>
+
+    <div *ngIf="!(auth.user | async)">
+      <input type="text" [(ngModel)]="email" placeholder="email">
+      <input type="password" [(ngModel)]="password" placeholder="email">
+    
+      <button (click)="signup()" [disabled]="!email || !password">
+        Signup
+      </button>
+    
+      <button (click)="login()" [disabled]="!email || !password">
+        Login
+      </button>
+    </div>
+    
+    <button (click)="logout()" *ngIf="auth.user | async">
+      Logout
+    </button>
+
+    <div class="form-group text-center social_login_popup">
+        <a (click)="tryGoogleLogin()" class="forget-pass" title="">
+         google
+        </a>
+        <a (click)="tryFacebookLogin()" class="forget-pass" title="">
+         facebook
+        </a>
+      </div> -->
+</section>
+
+
+
+
+<router-outlet></router-outlet>

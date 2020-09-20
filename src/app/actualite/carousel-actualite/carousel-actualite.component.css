@@ -1,0 +1,120 @@
+.actualite1 {
+    background-image: linear-gradient(to top, #f8f8f8c7 0%, #e8e7e7 100%);
+    padding-bottom: 25px
+}
+
+.actualite1 .social {
+    transform: rotate(-90deg);
+    display: flex;
+    margin-left: -175px
+}
+
+.actualite1 .social a {
+    color: #686868;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+.actualite1 .row {
+    align-items: center
+}
+
+.actualite1 .swivre-actualite .read-more {
+    margin: 30px 0px
+}
+
+.actualite1 .swivre-actualite .read-more a {
+    background: #EEC400;
+    padding: 12px 32px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.actualite1 h2 {
+    color: #404040;
+    font-weight: 600;
+    line-height: 1.3
+}
+
+.actualite1 span {
+    color: #EEC400;
+    font-weight: 600
+}
+
+.actualite1 p {
+    color: #747F92;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.actualite1 .masque {
+    margin-top: 40px;
+    text-align: center
+}
+
+.actualite1 .masque img {
+    width: 60%
+}
+
+.owl-carousel .owl-item img {
+    width: 50%
+}
+
+.actualite1 .owl-carousel .owl-nav button.owl-prev i,
+.actualite1 .owl-carousel .owl-nav button.owl-next i {
+    font-size: 30px;
+    padding: 5px 12px 5px 15px;
+    border-radius: 50%;
+    background: #fff;
+    color: #686868;
+    box-shadow: -1px 3px 4px -2px #6e6e6e;
+    transition: 0.2s all
+}
+
+.actualite1 .owl-carousel .owl-nav button.owl-prev i:active,
+.actualite1 .owl-carousel .owl-nav button.owl-next i:active,
+.actualite1 .owl-carousel .owl-nav button.owl-prev i:hover,
+.actualite1 .owl-carousel .owl-nav button.owl-next i:hover {
+    background: #EEC400;
+    color: #fff;
+}
+
+.actualite1 .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 15px
+}
+
+.actualite1 .owl-carousel .owl-nav {
+    position: absolute;
+    top: 48px;
+    left: -111px;
+}
+
+.actualite1 .scroll {
+    width: 87px;
+    position: absolute;
+    top: 26%;
+    RIGHT: -46px;
+    cursor: pointer;
+}
+
+.actualite1 .scroll p {
+    font-weight: 550;
+    font-size: 17px;
+    color: #686868;
+}
+
+.actualite1 .scroll,
+.actualite1 .scroll p:before {
+    transform: rotate(-90deg);
+}
+
+.actualite1 .scroll p:before {
+    content: url("../../../assets/img/line-scroll.png");
+    position: absolute;
+    bottom: -17px;
+    left: -69%;
+    margin-left: 6px;
+}

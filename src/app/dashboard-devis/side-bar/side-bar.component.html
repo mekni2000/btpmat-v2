@@ -1,0 +1,57 @@
+<div class="dashboard-background" *ngIf="user">
+    <div class="logo-dashboard home-fade">
+        <a routerLink="/">
+            <img src="../../../assets/img/home-dashboard.png">
+            <p>Accueil</p>
+        </a>
+    </div>
+    <div class="logo-dashboard profil-fade">
+        <a routerLink="{{user.id}}/profile" class="">
+            <img src="../../../assets/img/profil-dashboard.png">
+            <p>Profile</p>
+        </a>
+    </div>
+    <div class="logo-dashboard shopping-fade">
+        <a routerLink="{{user.id}}/panier" class>
+            <img src="../../../assets/img/shopping-dashboard.png">
+            <p>Panier</p>
+        </a>
+    </div>
+    <div class="logo-dashboard   devis-fade">
+        <a routerLink="{{user.id}}/devis">
+            <img src="../../../assets/img/devis-icon.png">
+            <p>Devis</p>
+        </a>
+    </div>
+    <div class="logo-dashboard service-fade">
+        <a routerLink="service-client">
+            <img src="../../../assets/img/micro-dashboard.png">
+            <p>Service Client</p>
+        </a>
+    </div>
+    <div class="logo-dashboard offres-fade">
+        <a routerLink="offres">
+            <img src="../../../assets/img/setting-dashboard.png">
+            <p>Offres & promos</p>
+        </a>
+    </div>
+    <div class="logo-dashboard ">
+        <a href="#">
+            <img src="../../../assets/img/deconnexion-dashboard.png">
+            <p>Déconnexion</p>
+        </a>
+    </div>
+</div>
+
+
+<section class="home-dashboard" *ngIf="user$ | async as user">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-2 col-sm-2 col-md-2 dashboard-bg pl-0">
+
+
+
+                <app-side-bar [user]="user"></app-side-bar>
+
+            </div>
+            <div class="col-lg-11  col-10 col-sm-10 col-md-10 dashbord-devis"></div>

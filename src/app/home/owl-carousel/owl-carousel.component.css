@@ -1,0 +1,106 @@
+.img-caption .carousel-caption {
+    position: absolute;
+    right: 4%;
+    bottom: AUTO;
+    left: AUTO;
+    color: #fff !important;
+    text-align: left;
+    TOP: 285px;
+    WIDTH: 50%;
+}
+
+.carousel-home .item {
+    background: #fff;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 20px 20px 0px;
+}
+
+.carousel-home .item {
+    background: #fff;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 20px 20px 0px;
+}
+
+.carousel-home .item i {
+    font-size: 30px;
+}
+
+.carousel-home .item .MECANIQUE p {
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600
+}
+
+.carousel-home .item .MECANIQUE span {
+    color: #DE7E73;
+    font-size: 15px;
+    font-weight: 550
+}
+
+.carousel-home .item img {
+    display: inline;
+}
+
+.img-caption .carousel-caption .actualité {
+    background-image: linear-gradient(120deg, #c9aa18 0%, #EEC400 100%);
+    padding: 15px 0px 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.carousel-home .Voir {
+    padding: 15px 0px
+}
+
+.carousel-home .Voir a {
+    color: #EEC400;
+    text-decoration: none;
+    font-size: 18px
+}
+
+.img-caption .carousel-caption .Expert {
+    background: #fff;
+    color: #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 19px
+}
+
+.img-caption .carousel-caption .Expert .Construction {
+    color: #404040;
+    font-weight: bold;
+}
+
+.img-caption .carousel-caption .Expert span {
+    color: #747F92;
+    font-weight: bold
+}
+
+.img-caption .carousel-caption .Expert p {
+    color: #404040;
+    font-size: 13px;
+    line-height: 1.28;
+    font-weight: 500
+}
+
+.img-caption .carousel-control-next {
+    top: auto;
+    right: 40%;
+    left: auto;
+    width: AUTO;
+    font-weight: bold;
+    font-size: 17px;
+    color: #eec400;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    bottom: 65px
+}

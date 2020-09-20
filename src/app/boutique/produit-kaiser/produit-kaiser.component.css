@@ -1,0 +1,239 @@
+.border-div {
+    box-shadow: -1px 1px 9px -2px #dcd0d0;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    height: 23em;
+}
+
+.border-div .item .MECANIQUE p {
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600
+}
+
+.border-div .item .MECANIQUE span {
+    color: #DE7E73;
+    font-size: 15px;
+    font-weight: 550
+}
+
+.MECANIQUE p {
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #747F92;
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.MECANIQUE span {
+    color: #DE7E73;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.panier span,
+.remise p {
+    color: #808080;
+    font-weight: 600;
+    font-family: montserrat-light;
+    font-size: 14px;
+}
+
+.panier span {
+    font-family: montserrat-bold;
+}
+
+.panier-img img {
+    width: 25px;
+}
+
+.panier {
+    justify-content: flex-end;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.prix {
+    margin-top: 14px;
+    margin-bottom: -14px;
+}
+
+.panier-img {
+    margin-left: 7px;
+}
+
+.brand-logo img {
+    width: 50px;
+    height: 31px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px -1px #bbb;
+}
+
+.product-img img {
+    width: 100%;
+    height: 138px;
+    object-fit: contain;
+    box-shadow: 0px 0px 8px 0px #eaeaea;
+    border-radius: 11px;
+}
+
+.product-img {
+    margin: 16px 0;
+}
+
+
+/*modal product*/
+
+.img-slide button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.img-slide img {
+    width: 90px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.modal1 h2 {
+    font-size: 23px;
+    color: #334659;
+    line-height: 1.2;
+    font-weight: 600
+}
+
+.modal1 h2 span {
+    font-size: 16px;
+    color: #ABB4BD
+}
+
+.modal-25 {
+    padding: 25px 0 0;
+}
+
+.modal1 p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.modal1 li {
+    color: #ABB4BD;
+    font-size: 16px
+}
+
+.modal1 ul {
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 0
+}
+
+.modal1 .row .row {
+    align-items: center
+}
+
+.modal1 h5 {
+    font-size: 20px;
+    color: #ABB4BD;
+    font-weight: 600;
+}
+
+ngb-carousel .picsum-img-wrapper {
+    height: 40vh;
+    text-align: center;
+    padding: 36px 33px 0;
+    border: 1px solid #E3E7F1;
+    border-radius: 26px;
+    margin: 0px 50px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex .picsum-img-wrapper {
+    border: 1px solid #E3E7F1;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 12px 3px;
+}
+
+.img-slide {
+    justify-content: center;
+}
+
+.next {
+    position: absolute;
+    right: 11%;
+    width: 56px;
+    top: 26%;
+}
+
+.prev {
+    position: absolute;
+    left: 11%;
+    width: 56px;
+    top: 26%;
+}
+
+ngb-carousel .picsum-img-wrapper img {
+    width: 70%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: auto;
+}
+
+.modal1 h4 {
+    color: #FF5B5B;
+    font-size: 25px;
+    font-weight: 600
+}
+
+.modal1 h6 {
+    color: #424242;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.modal1 hr {
+    color: #424242;
+    width: 57px;
+    margin-left: 0;
+    margin-top: -19px;
+    border: 1px solid;
+}
+
+.modal1 .border-gris {
+    border-bottom: 3px dashed #91979D;
+    border-top: 3px dashed #91979D;
+    padding: 20px 0;
+    margin: 20px 0
+}
+
+.modal1 .marque {
+    color: #ABB4BD;
+    margin-bottom: 3px
+}
+
+.ajout-btn,
+.ajout-btn:active,
+.ajout-btn:hover {
+    text-decoration: none;
+    background: #ec0;
+    padding: 12px 21px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}

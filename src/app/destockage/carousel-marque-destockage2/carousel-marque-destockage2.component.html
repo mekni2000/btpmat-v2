@@ -1,0 +1,22 @@
+<section class="INGCO ">
+    <div class="container ">
+
+
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let carouselProduit of carouselProduits">
+
+                <div class="item ">
+                    <div class="row ">
+                        <div class="col-lg-3 materiels " data-toggle="modal " data-target="#exampleModalLong9" *ngFor="let Produit of produits">
+                            <app-produit-destockage2></app-produit-destockage2>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+
+
+    </div>
+</section>

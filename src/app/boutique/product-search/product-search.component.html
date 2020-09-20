@@ -1,0 +1,152 @@
+<!-- <ng-container  *ngIf="products$ | async as products">
+    <div  class="wrapper-products" *ngFor="let product of products?.paginatedList">
+      <div class="row-products">
+        {{product.name}}
+      </div>
+    </div>
+</ng-container> -->
+
+<div class="wrapper" *ngIf="products$ | async as products else loading">
+    <div class="row_wrapper" >
+        <div class="card" *ngFor='let product of products?.paginatedList'>
+            <div class="card_header">
+                <div class="profile_avatar">
+                    <img [src]="product.brandLogoURL">
+                </div>
+                <!-- <div class="profile_details">
+                    <span class="status">
+                        NOT COMPLETE 
+                      </span>
+                      <span class="info">
+                        Cycle ends in 22 days
+                      </span>
+                </div> -->
+            </div>
+            <div class="card_body">  
+                <div class="body_avatar">
+                    <img [src]="product.productThumbnailPhotoURL">
+                </div>
+                <div class="body_details">
+                    <ul>
+                        <li>{{product.name}}</li>
+                        <li style="color: red">{{product.brandName}}</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="card_footer">
+              <div class="left">
+                  <span>Ref : {{product.reference}}</span>
+              </div>
+              <div class="right">
+                  {{product.price | currency : 'EUR'}}
+                  <img src="../../../assets/img/panier.svg " (click)="openXl(longContent, product)">
+              </div>
+    
+              <!-- <div class="btn-group">
+                <a href="#" class="btn-default">
+                  VIEW TRANSCRIPT
+                </a>
+                <a href="#" class="btn-primary">
+                  REPORT CE
+                </a>
+              </div> -->
+            </div>
+        </div>
+
+       
+        <!-- <div class="product_details" *ngFor="let product of products?.paginatedList">
+            <div class="head_card">
+                <div class="head_card_picture">
+                    <img [src]="product.brandLogoURL">
+                </div>
+                <div class="card_detail">
+                    <div class="card_detail_name"><span>name</span></div>
+                    <div class="card_detail_address"><span>1A . city B ...</span></div>
+                </div>
+            </div>
+            <div class="body_card">
+                <div class="body_card_picture">
+                    <img [src]="product.productThumbnailPhotoURL">
+                </div>
+                <div class="body_card_detail">
+                    <p>Product name</p>
+                    <span>Ref: G2154</span>
+                </div>
+            </div>
+            <div class="footer_card">
+                footer
+            </div>
+        </div> -->
+    </div>
+</div>
+
+
+<ng-template #longContent let-modal >
+    <div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" >
+        <div class="container">
+
+           <div class="product_info" *ngIf="product">
+            <ngb-carousel class="product_images">
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="product.productThumbnailPhotoURL" alt="Random first slide">
+                  </div>
+                  <div class="carousel-caption">
+                    <!-- <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+                  </div>
+                </ng-template>
+            
+              </ngb-carousel>
+
+              <div class="product_details">
+                <div class="info">
+                    <h3>{{product.name}} </h3>
+                    <span class="price">{{product.price | currency : 'EUR'}}</span>
+                </div>
+                <span> REFERENCE: {{product.reference}}</span>
+                <p>Product Details</p>
+                        <ul>
+                            <li>Tension: 220-240 V ~ 60Hz</li>
+                            <li>Puissance: 100 W</li>
+                            <li>Capacité collé: 13-18g / min</li>
+                            <li>Diamètre du barreau: 11.2mm</li>
+                            <li>Compris : 2 barreaux de silicone inclus 11.2mm en blister</li>
+                            <li>Warranty provided by Brand Owner / Manufacturer</li>
+                        </ul>
+              </div>
+
+           </div>
+         
+          
+            <div class="price_wrapper">
+            
+              <div class="ms-count js-count" >
+                <button class="ms-count__btn ms-count__btn--add js-add" type="button"><span class="ms-count__addicon js-icon"></span></button>
+                <span class="ms-count__number js-number">1</span>
+                <button class="ms-count__btn ms-count__btn--sub js-sub" type="button"><span class="ms-count__subicon"></span></button>
+              </div>
+            </div>
+            
+          </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="onSubmit()">
+        <img src="../../../assets/img/panier-logo.png" alt="">
+        Ajouter au panier
+      </button>
+   
+    </div>
+  </ng-template>
+
+
+
+<ng-template #loading>
+    loading ...
+</ng-template>

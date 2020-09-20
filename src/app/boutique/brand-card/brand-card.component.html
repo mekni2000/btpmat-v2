@@ -1,0 +1,22 @@
+<div class="container">
+    <ngb-tabset [justify]="currentJustify" [id]="brand.id">
+        <ngb-tab *ngFor="let category of brand.categories" [id]="category.id">
+            <ng-template ngbTabTitle>
+                <p class="mb-0" (click)="beforeChange(brand.id, category.id)">{{category.name}} {{ i + 1 }}</p>
+            </ng-template>
+
+            <ng-template ngbTabContent *ngIf="products$ | async as products ; else aze">
+                <div class="row">
+                    <div class="col-lg-3" *ngFor="let product of products?.paginatedList">
+                        <product-card [product]="product"></product-card>
+
+                    </div>
+                </div>
+
+            </ng-template>
+
+
+        </ngb-tab>
+    </ngb-tabset>
+
+</div>

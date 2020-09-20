@@ -1,0 +1,91 @@
+<div class="dashbord-devis">
+    <div class="devis">
+        <p>Home / Dashboard / Panier / <span>Commandes passée</span></p>
+        <div class="liste-devis">
+
+
+            <ul>
+                <li><a routerLink="../panier" routerLinkActive="active">Panier En cours</a></li>
+                <li><a routerLink="../commande-passe" routerLinkActive="active">Commandes passée</a></li>
+                <li><a routerLink="../tous-commande" routerLinkActive="active">Tous les commandes</a></li>
+
+
+            </ul>
+
+
+
+
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="devis-p">Mon Panier</p>
+
+            </div>
+
+
+        </div>
+        <div class="table-responsive-sm">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <label class="container">Référence
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                        </th>
+                        <th scope="col" class="color-gris">Produit</th>
+                        <th scope="col" class="color-gris">Catégorie</th>
+                        <th scope="col" class="color-gris">Prix</th>
+                        <th scope="col" class="color-gris">Quantité</th>
+                        <th scope="col" class="color-gris text-center">Actions</th>
+                    </tr>
+                </thead>
+                <div>
+
+                </div>
+                <tbody class="num-checkbox">
+                    <tr *ngFor="let product  of products let index=index">
+                        <th scope="row">
+
+                            <label class="container">0 {{index}}
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+
+
+                        </th>
+                        <td class="d-flex">
+                            <div class="mask">
+                                <img src="../../../assets/img/mask1.svg" alt="">
+                            </div>
+                            INGCO 2000 W
+                        </td>
+                        <td>INGCO</td>
+                        <td>€ 609.90 </td>
+                        <td>12</td>
+
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="../../../assets/img/yeux.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../../../assets/img/supprimer.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../../../assets/img/valider.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+@media screen and (max-width: 991px) {
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 18px
+    }
+    .caption-text .carousel-caption {
+        width: 85%;
+        top: 12%;
+        left: 9%;
+    }
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active,
+    .slider-home .carousel-item.active img,
+    .carousel .img-opacity {
+        height: auto
+    }
+    .carousel .img-opacity {
+        height: 100%
+    }
+    .camion-btpmat .about-us {
+        margin-top: 30px
+    }
+    .caption-text .carousel-caption .Lorem {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-caption .carousel-caption {
+        position: static;
+    }
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 30px;
+    }
+    .caption-text .carousel-caption .Lorem {
+        font-size: 18px;
+    }
+    .caption-text .carousel-caption {
+        top: 17%
+    }
+    .img-caption .carousel-caption {
+        top: 275px
+    }
+}
+
+@media (min-width:1024px) and (max-width:1299px) {
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 25px
+    }
+    .caption-text .carousel-caption {
+        top: 17%
+    }
+    .caption-text .carousel-caption .Lorem {
+        font-size: 15px;
+    }
+    .caption-text .carousel-caption .demande-devis a {
+        font-size: 20px
+    }
+}
+
+@media (min-width:1201px) and (max-width:1500px) {
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 28px;
+    }
+    .caption-text .carousel-caption .Lorem {
+        font-size: 18px;
+    }
+    .caption-text .carousel-caption {
+        top: 25%
+    }
+}
+
+@media (min-width:1501px) and (max-width:1700px) {
+    .caption-text .carousel-caption .qualité,
+    .carousel-caption .disponiblité {
+        font-size: 33px;
+    }
+    .caption-text .carousel-caption .Lorem {
+        font-size: 21px;
+    }
+    .img-caption .carousel-caption {
+        top: 3%
+    }
+}

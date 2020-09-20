@@ -1,0 +1,24 @@
+.envoye {
+    font-family: montserrat-bold;
+    font-size: 1.4em;
+}
+
+.envoye img {
+    height: 12em;
+}
+
+.msg {
+    color: #334659;
+    font-family: 'montserrat-regular';
+    font-size: 1em;
+}
+
+.msg p span {
+    font-family: 'montserrat-Medium';
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+::ng-deep .modal.show .modal-dialog {
+    top: 12%;
+}

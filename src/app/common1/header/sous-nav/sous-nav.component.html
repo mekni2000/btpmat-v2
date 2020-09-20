@@ -1,0 +1,151 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <div class="logo-responsive">
+      <a href="#" class="lien-logo-accueil">
+        <img src="../../../assets/img/logo.png" alt="" />
+      </a>
+    </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isShown = !isShown"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: isShown }"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" (click)="isShown = false">{{
+            "%android_Accueil%" | translate
+          }}</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link menu-global " [matMenuTriggerFor]="menu">
+            Menu global
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/boutique" (click)="isShown = false"
+            >Boutique</a
+          >
+        </li>
+        <!-- <li class="nav-item ">
+                    <a class="nav-link " href="#" (click)="isShown = false">Showroom virtuel</a>
+                </li> -->
+        <li class="nav-item ">
+          <a
+            class="nav-link lien-Déstockage"
+            routerLink="/destockage"
+            (click)="isShown = false"
+            >{{ "%android_Déstockage%" | translate }}</a
+          >
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link lien-solution"
+            routerLink="/nos-solutions"
+            (click)="isShown = false"
+            >Nos solutions</a
+          >
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link lien-Actualité"
+            routerLink="actualite"
+            (click)="isShown = false"
+            >{{ "%android_Actualite%" | translate }}</a
+          >
+        </li>
+        <li class="nav-item lien-devis ">
+          <a
+            class="nav-link "
+            routerLink="/demande-devis"
+            (click)="isShown = false"
+            >{{ "%android_demandededevis%" | translate }}</a
+          >
+        </li>
+      </ul>
+
+      <mat-menu #menu="matMenu">
+        <div class="container " (click)="isShown = false">
+          <!-- <div class="row " *ngIf="categories$ | async as categories; else loading" (click)="$event.stopPropagation();">
+
+                        <div class="col-lg-2 col-4 col-sm-4 MATERIEL BTP " *ngFor="let category of categories?.headCategories">
+                            <a href="# " (click)="isShown = false">
+                                <div class="img-materiel ">
+                                    <img src="../../../../assets/img/electricite.svg">
+                                </div>
+                                <p>{{category.label}}</p>
+
+                            </a>
+                            <div class="row cattegorie ">
+                                <div class="col-lg-2 col-12 col-sm-6 col-md-4 " *ngFor="let child of category?.subCategories">
+                                   <ul>
+                                       <li>{{child.label}}</li>
+                                   </ul>
+                                 
+                                </div>
+                             
+        
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div> -->
+
+          <div
+            (click)="$event.stopPropagation()"
+            *ngIf="categories$ | async as categories; else loading"
+          >
+            <ngb-tabset [justify]="currentJustify">
+              <ngb-tab
+                *ngFor="let category of categories?.headCategories"
+                [id]="category.id"
+              >
+                <div class="row">
+                  <div class="col-lg-3">
+                    <ng-template ngbTabTitle>
+                      <span> {{ category.label }}</span>
+                    </ng-template>
+                  </div>
+                </div>
+
+                <ng-template ngbTabContent>
+                  <div class="row">
+                    <div
+                      class="col-lg-3"
+                      *ngFor="let subCategory of category?.subCategories"
+                    >
+                      <div class="subcategories">
+                        <p class="cars" routerLink="/demande-devis/{{subCategory.label}}">{{ subCategory.label }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+        </div>
+      </mat-menu>
+    </div>
+  </div>
+</nav>
+
+<ng-template #loading>
+  loading...
+</ng-template>

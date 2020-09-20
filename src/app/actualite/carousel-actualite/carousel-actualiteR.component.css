@@ -1,0 +1,184 @@
+                     @media screen and (min-width:1700px) {
+                         .actualite1 .social a {
+                             font-size: 21px;
+                         }
+                         .actualite1 h2 {
+                             font-size: 38px;
+                             line-height: 1.5
+                         }
+                         .actualite1 .swivre-actualite .read-more a {
+                             font-size: 22px;
+                             padding: 12px 50px
+                         }
+                         .actualite1 .owl-carousel .owl-nav button.owl-prev i,
+                         .actualite1 .owl-carousel .owl-nav button.owl-next i {
+                             padding: 15px 21px 15px 21px
+                         }
+                         .actualite1 .owl-carousel .owl-nav {
+                             top: 177px;
+                             left: -134px;
+                         }
+                         .nos-acualite .container .SKILLED h4 {
+                             font-size: 30px
+                         }
+                         .nos-acualite .container .SKILLED h4:before,
+                         .nos-acualite .container .SKILLED h4:after {
+                             top: 17px;
+                             left: 24%;
+                         }
+                         .nos-acualite .container .SKILLED h4:after {
+                             right: -18%
+                         }
+                         .nos-acualite .container .SKILLED h3 {
+                             margin: 20px 0
+                         }
+                         .nos-acualite .container .SKILLED p {
+                             font-size: 21px;
+                         }
+                     }
+                     
+                     @media screen and (max-width:768px) {
+                         .actualite1 h2 {
+                             font-size: 25px;
+                         }
+                         .actualite1 .swivre-actualite .read-more a {
+                             font-size: 16px;
+                         }
+                         .actualite1 .swivre-actualite .read-more {
+                             text-align: center
+                         }
+                         .actualite1 .social {
+                             display: none
+                         }
+                         .actualite1 .swivre-actualite {
+                             margin-top: 50px;
+                             text-align: center
+                         }
+                         .actualite1 .masque img {
+                             width: 100%
+                         }
+                         .actualite1 .scroll {
+                             right: -28px;
+                             top: 0
+                         }
+                         .actualite1 .owl-carousel .owl-nav {
+                             position: static;
+                             text-align: center
+                         }
+                         .actualite1 .masque {
+                             margin-top: 20px
+                         }
+                         .nos-acualite .container .SKILLED h4 {
+                             font-size: 18px;
+                         }
+                         .nos-acualite .container .SKILLED h4::before,
+                         .nos-acualite .container .SKILLED h4::after {
+                             content: ''
+                         }
+                         .nos-acualite .container .SKILLED h3 {
+                             font-size: 25px;
+                         }
+                         .nos-acualite .container .SKILLED {
+                             width: 80%;
+                         }
+                         .nos-acualite .container .SKILLED p {
+                             margin-top: 15px
+                         }
+                         .owl-carousel .owl-item img {
+                             width: 100%;
+                         }
+                     }
+                     
+                     @media (min-width:768px) and (max-width:991px) {
+                         .actualite1 .social {
+                             position: absolute;
+                             top: 350px;
+                             left: 53px;
+                         }
+                         .actualite1 h2 {
+                             text-align: center
+                         }
+                         .actualite1 .swivre-actualite {
+                             margin-top: 50px
+                         }
+                         .actualite1 .swivre-actualite .read-more {
+                             text-align: center;
+                             margin-top: 50px
+                         }
+                         .actualite1 .scroll {
+                             top: 7%
+                         }
+                         .actualite1 .masque {
+                             margin-top: 17px;
+                         }
+                         .owl-carousel .owl-item img {
+                             width: 100%
+                         }
+                         .actualite1 .owl-carousel .owl-nav {
+                             position: static;
+                             text-align: center
+                         }
+                         .nos-acualite .container .SKILLED {
+                             width: 80%
+                         }
+                         .nos-acualite .container .SKILLED p {
+                             font-size: 18px
+                         }
+                     }
+                     
+                     @media (min-width:992px) and (max-width:1200px) {
+                         .actualite1 h2 {
+                             line-height: 1.4;
+                             font-size: 22px;
+                         }
+                         .actualite1 .masque img {
+                             width: 50%
+                         }
+                         .owl-carousel .owl-item img {
+                             width: 55%
+                         }
+                         .actualite1 .social {
+                             margin-top: 140px;
+                             margin-left: -80px;
+                         }
+                         .actualite1 .owl-carousel .owl-nav {
+                             position: absolute;
+                             top: 90px;
+                             left: -121px;
+                         }
+                         .actualite1 .masque {
+                             margin: 30px 0
+                         }
+                         .nos-acualite .container .SKILLED {
+                             width: 60%
+                         }
+                         .nos-acualite .container .SKILLED h4:before {
+                             left: 15%;
+                         }
+                         .nos-acualite .container .SKILLED h4:after {
+                             right: -32%
+                         }
+                         .actualite1 .swivre-actualite .read-more a {
+                             font-size: 14px
+                         }
+                         .nos-acualite .container .SKILLED p {
+                             font-size: 20px
+                         }
+                         .actualite1 .social a {
+                             font-size: 16px;
+                         }
+                         .actualite1 .owl-carousel .owl-nav button.owl-prev i,
+                         .actualite1 .owl-carousel .owl-nav button.owl-next i {
+                             font-size: 20px
+                         }
+                     }
+                     
+                     @media (min-width:1201px) and (max-width:1600px) {
+                         .actualite1 .social {
+                             margin-left: -100px;
+                             margin-top: -6px;
+                         }
+                         .journal img {
+                             width: 95%;
+                         }
+                     }

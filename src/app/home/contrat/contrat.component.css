@@ -1,0 +1,30 @@
+.contrat {
+    background: #EEC400;
+    padding: 9px 0
+}
+
+.contrat .container-fluid p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0
+}
+
+.contrat .client {
+    text-align: center;
+}
+
+@media screen and (max-width:991px) {
+    .contrat .container-fluid p {
+        font-size: 15px;
+    }
+    .contrat .container-fluid .row {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contrat .client img {
+        width: 41%;
+    }
+}

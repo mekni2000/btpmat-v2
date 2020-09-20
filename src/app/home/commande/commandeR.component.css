@@ -1,0 +1,64 @@
+@media screen and (max-width:991px) {
+    .commande .confiance p::before,
+    .commande .confiance p::after {
+        content: ''
+    }
+    .commande .confiance p {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .commande .confiance h4 {
+        font-size: 20px
+    }
+    .commande .container .row p {
+        font-size: 15px;
+        margin: 10px 0 18px
+    }
+    .commande {
+        height: 730px
+    }
+    .commande .man-img {
+        margin: 13px 0px 30px
+    }
+    .commande .confiance h5 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1300px) and (max-width:1500px) {
+    .commande .confiance p::before {
+        bottom: 17px;
+        left: 27%;
+    }
+    .commande .confiance p::after {
+        bottom: 17px;
+        right: 27%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .commande .confiance h4 {
+        font-size: 50px;
+    }
+    .commande .confiance p {
+        font-size: 30px;
+    }
+    .commande .Commandez a {
+        font-size: 22px;
+    }
+    .commande .container .row span {
+        font-size: 24px;
+    }
+    .commande .container .row p {
+        font-size: 22px
+    }
+}
+
+@media (max-width:576px) {
+    .commande .container .row {
+        position: static
+    }
+    .commande {
+        height: 912px
+    }
+}

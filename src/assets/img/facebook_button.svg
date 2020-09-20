@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172.974" height="65" viewBox="0 0 172.974 65">
+  <g id="facebook_button" transform="translate(-211 -345)">
+    <g id="Rectangle_178" data-name="Rectangle 178" transform="translate(211 345)" fill="#385c8e" stroke="#385c8e" stroke-width="1">
+      <rect width="172.974" height="65" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="171.974" height="64" rx="4.5" fill="none"/>
+    </g>
+    <path id="facebook_2_" data-name="facebook (2)" d="M127.174,16.241h3.343V30a.492.492,0,0,0,.492.492h5.667a.492.492,0,0,0,.492-.492v-13.7h3.843a.492.492,0,0,0,.489-.436l.584-5.066a.492.492,0,0,0-.489-.548h-4.426V7.08c0-.957.515-1.443,1.532-1.443h2.894a.492.492,0,0,0,.492-.492V.5A.492.492,0,0,0,141.594,0h-3.988c-.028,0-.091,0-.183,0a7.643,7.643,0,0,0-5,1.884,5.241,5.241,0,0,0-1.743,4.658v3.714h-3.509a.492.492,0,0,0-.492.492v5A.492.492,0,0,0,127.174,16.241Z" transform="translate(163.618 361.9)" fill="#fff"/>
+  </g>
+</svg>

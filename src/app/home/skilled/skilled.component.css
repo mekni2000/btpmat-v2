@@ -1,0 +1,65 @@
+.skilled {
+    margin-top: 50px;
+    background-image: linear-gradient(120deg, #cfcece6b 0%, #e4e4e1bf 100%);
+    padding: 40px 0px
+}
+
+.SKILLED .text-center {
+    cursor: pointer;
+}
+
+.skilled .OFFERING span {
+    color: #404040;
+    font-size: 20px;
+    position: relative;
+}
+
+.skilled .OFFERING .line-skilled::before {
+    content: url(../../../assets/img/skilled-line.png);
+    position: absolute;
+    bottom: 13px;
+    left: -34%;
+    margin-left: -5px
+}
+
+.skilled .OFFERING .line-skilled::after {
+    content: url(../../../assets/img/skilled-line.png);
+    position: absolute;
+    bottom: 13px;
+    right: -33%;
+    margin-right: -5px
+}
+
+.skilled .OFFERING p {
+    color: #EEC400;
+    font-weight: 600;
+    font-size: 30px
+}
+
+.skilled .OFFERING .what {
+    color: #404040;
+    font-weight: 600;
+    font-size: 30px
+}
+
+.skilled .row {
+    color: #747F92
+}
+
+.skilled .row span {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    cursor: pointer;
+    color: rgb(116, 127, 146);
+    text-align: initial
+}
+
+.skilled .row p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #747F92
+}

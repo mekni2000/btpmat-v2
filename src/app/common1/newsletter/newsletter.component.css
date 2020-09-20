@@ -1,0 +1,46 @@
+.newsletter {
+    background-image: linear-gradient(to top, #fedc083b 0%, #fedc083d 100%);
+    padding: 25px 0px
+}
+
+.newsletter .IDÉES-Newsletter p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: -3px;
+}
+
+.newsletter .IDÉES-Newsletter span {
+    color: #494747;
+    font-size: 15px;
+    font-weight: 550
+}
+
+.newsletter input {
+    width: 90%;
+    padding: 9px 10px 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #d2caca;
+    background: #D6D6D6;
+    font-size: 14px;
+    font-weight: 600;
+    color: #747F92;
+    font-weight: 600;
+}
+
+.newsletter button {
+    position: absolute;
+    right: 75px;
+    top: 0;
+    background: #FEDC08;
+    border: none;
+    padding: 8px 14px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    border: none
+}
